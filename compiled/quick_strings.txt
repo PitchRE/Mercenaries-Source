@@ -1,4 +1,4 @@
-786
+787
 qstr_Next_Page Next_Page
 qstr_Game_Rules:^ Game_Rules:^
 qstr_Show_game_rules Show_game_rules
@@ -99,6 +99,7 @@ qstr_{s59}_did_add_kills_ {s59}_did_add_kills,_deaths_and_{reg3}_experience_this
 qstr_{s59}_got_kicked_bec {s59}_got_kicked_because_he_is_banned
 qstr_The_server_seems_to_ The_server_seems_to_have_a_config/password/string_issue!_Can't_connect_to_the_database!
 qstr_{s59}_has_no_account {s59}_has_no_account!
+qstr_Please_rejoin_server Please_rejoin_server_in_order_to_load_your_character.
 qstr_Player_tried_to_use_ Player_tried_to_use_character_{s59}_but_did_fail_cause_not_bound_to_this_GUID
 qstr_{s11}GiveEXP?sid={s1 {s11}GiveEXP?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}&exp={reg12}&kills={reg13}&deaths={reg14}
 qstr_{s11}GiveEarnings?si {s11}GiveEarnings?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}&gold={reg12}

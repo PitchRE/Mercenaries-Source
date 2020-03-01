@@ -7841,6 +7841,10 @@ scripts = [
 			(assign, ":player_id", reg1),
 			(str_store_player_username, s59, ":player_id"),
 			(server_add_message_to_log, "@{s59} has no account!"),
+            (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
+                  (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
+      (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
+      (kick_player, ":player_id"),
 		(else_try),
 			(eq, ":return_code", -3), #Character not bound to this account
 			(player_is_active, reg1),
@@ -7923,7 +7927,8 @@ scripts = [
 		   (str_store_string, s12, "str_server_identifier"),
 		   (str_store_string, s13, "str_server_password"),
 		   (str_store_string, s14, "@{s11}checkplayer?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}"),
-		   (send_message_to_url, s14, 1),
+		  (display_message, s14),
+       (send_message_to_url, s14, 1),
 		 (try_end),
 		 ]),
 	  

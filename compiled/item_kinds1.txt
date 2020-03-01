@@ -647,7 +647,7 @@ itemsfile version 3
  0
 0
 
- itm_east_arrows Eastern_Arrowss Eastern_Arrowss 4  strela_list 0  flying_missile 2305843009213693952  kalmyk_kolchan_I 3458764513820540928  kalmyk_kolchan 1152921504606846976  65541 1610612736 500 4398046511112 2.500000 30 0 0 0 0 0 0 0 95 30 257 0
+ itm_east_arrows Eastern_Arrows Eastern_Arrows 4  strela_list 0  flying_missile 2305843009213693952  kalmyk_kolchan_I 3458764513820540928  kalmyk_kolchan 1152921504606846976  65541 1610612736 500 4398046511112 2.500000 30 0 0 0 0 0 0 0 95 30 257 0
  0
 0
 
