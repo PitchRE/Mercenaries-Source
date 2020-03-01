@@ -31,8 +31,8 @@ rm *.pyc
 
 
 cd '/home/pitch/Desktop/Mercenaries Project/MS/compiled'
-cp *.txt '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules/Ogniem i Mieczem/'
-cp *.txt '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Ogniem i Mieczem/'
+cp *.txt '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Mercenaries/'
+cp *.txt '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries/'
 clear
 echo Updated Server Files.
 echo Updated Client Files.
