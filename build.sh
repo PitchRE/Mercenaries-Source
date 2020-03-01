@@ -30,5 +30,10 @@ python process_postfx.py
 rm *.pyc
 
 
-cd '/home/pitch/Downloads/Mount&Blade With Fire and Sword Dedicated/Modules/Ogniem i Mieczem'
+cd '/home/pitch/Desktop/Mercenaries Project/MS/compiled'
 cp *.txt '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules/Ogniem i Mieczem/'
+cp *.txt '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Ogniem i Mieczem/'
+clear
+echo Updated Server Files.
+echo Updated Client Files.
+echo Compiling was successful!
