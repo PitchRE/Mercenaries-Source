@@ -13,7 +13,7 @@ from module_constants import *
 
 
 ####################################################################################################################
-# During a dialog, the dialog lines are scanned from top to bottom.
+# During a a dialog, the dialog lines are scanned from top to bottom.
 # If the dialog-line is spoken by the player, all the matching lines are displayed for the player to pick from.
 # If the dialog-line is spoken by another, the first (top-most) matching line is selected.
 #
