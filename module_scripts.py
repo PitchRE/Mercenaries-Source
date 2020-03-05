@@ -7880,7 +7880,7 @@ scripts = [
 	  [
       (store_script_param, ":player_id", 1),
        (store_script_param, ":death_id", 2),
-       # (store_script_param, ":weapon_id", 3),
+       (store_script_param, ":weapon_id", 3),
 
 
 	  (str_store_player_username, s10, ":player_id"),
@@ -7888,13 +7888,13 @@ scripts = [
 	  (player_get_unique_id, reg10, ":player_id"),
     	  (player_get_unique_id, reg20, ":death_id"),
 	  (assign, reg11, ":player_id"),
-     # (assign, reg21, ":weapon_id"),
+      (assign, reg21, ":weapon_id"),
 	  (str_store_string, s11, "str_master_server"),
 	  (str_store_string, s12, "str_server_identifier"),
 	  (str_store_string, s13, "str_server_password"),
 
-	  (str_store_string, s14, "@{s11}GiveEXP?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}&death_guid={reg20}"),
-    (display_message, "@Killer id: {reg11}, Death id: {reg20}"),
+	  (str_store_string, s14, "@{s11}GiveEXP?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}&death_guid={reg20}&weapon_id={reg21}"),
+    (display_message, "@Killer id: {reg11}, Death id: {reg20}, Weapon id: {reg21}"),
 	  (send_message_to_url, s14),
 	  ]),
 	  
