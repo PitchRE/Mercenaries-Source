@@ -7996,6 +7996,21 @@ mission_templates = [
          (store_trigger_param_1, ":dead_agent_no"),
          (store_trigger_param_2, ":killer_agent_no"),
 
+	 #Illuminati
+		 (try_begin),
+			(gt, ":killer_agent_no", 0),
+      		(gt, ":dead_agent_no", 0),
+			(agent_get_player_id, ":killer_player_id", ":killer_agent_no"),
+      		(agent_get_player_id, ":dead_player_id", ":dead_agent_no"),
+			(player_is_active, ":killer_player_id"),
+      		(player_is_active, ":dead_player_id"),
+			(gt, ":killer_player_id", 0),
+      	(gt, ":dead_player_id", 0),
+			 (call_script, "script_cf_pitch_multiplayer_player_killed_data", ":killer_player_id", ":dead_player_id"),
+		 (try_end),
+		 #Illuminati
+
+
 		 #Illuminati
 		 (try_begin),
 			(gt, ":killer_agent_no", 0),

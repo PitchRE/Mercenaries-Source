@@ -7789,7 +7789,7 @@ scripts = [
 			(player_set_gold, ":player_id", ":cur_gold"),
 			(server_add_message_to_log, "@{s59} got {reg2} gold this round"),
 			(str_store_string, s60, "@You got {reg2} gold!"),
-      (multiplayer_send_string_to_player, ":player_id", multiplayer_event_show_server_message  , s60),
+
 			(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, s60),
 			#Important: Add sound of earning gold
 			#Important: Sync player this round points with client side player
@@ -7801,7 +7801,7 @@ scripts = [
 			(try_begin),
 				(eq, reg2, 1), #Player did level up
 				(str_store_string, s60, "@You did level up! You are level {reg4} now!^{reg5} EXP needed for new level!"),
-          (multiplayer_send_string_to_player, ":player_id", multiplayer_event_show_server_message  , s60),
+    
 				(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_important_message, s60),
 				(player_set_slot, ":player_id", slot_player_experience_to_next_level, reg5),
 				(player_set_slot, ":player_id", slot_player_level, reg4),
@@ -7855,7 +7855,9 @@ scripts = [
        ]),
       
 	  ("cf_illu_multiplayer_player_give_exp",
-	  [(store_script_param, ":player_id", 1),
+	  [
+      (store_script_param, ":player_id", 1),
+
 	  
 	  (player_get_slot, ":round_points", ":player_id", slot_player_this_round_points),
 	  (str_store_player_username, s10, ":player_id"),
@@ -7870,6 +7872,29 @@ scripts = [
 	  (player_get_slot, reg14, ":player_id", slot_player_this_round_deaths),
 	  (str_store_string, s14, "@{s11}GiveEXP?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}&exp={reg12}&kills={reg13}&deaths={reg14}"),
     (display_message, "@{s11}GiveEXP?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}&exp={reg12}&kills={reg13}&deaths={reg14}"),
+	  (send_message_to_url, s14),
+	  ]),
+
+
+    	  ("cf_pitch_multiplayer_player_killed_data",
+	  [
+      (store_script_param, ":player_id", 1),
+       (store_script_param, ":death_id", 2),
+       # (store_script_param, ":weapon_id", 3),
+
+
+	  (str_store_player_username, s10, ":player_id"),
+	  (str_encode_url, s10),
+	  (player_get_unique_id, reg10, ":player_id"),
+    	  (player_get_unique_id, reg20, ":death_id"),
+	  (assign, reg11, ":player_id"),
+     # (assign, reg21, ":weapon_id"),
+	  (str_store_string, s11, "str_master_server"),
+	  (str_store_string, s12, "str_server_identifier"),
+	  (str_store_string, s13, "str_server_password"),
+
+	  (str_store_string, s14, "@{s11}GiveEXP?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}&death_guid={reg20}"),
+    (display_message, "@Killer id: {reg11}, Death id: {reg20}"),
 	  (send_message_to_url, s14),
 	  ]),
 	  
