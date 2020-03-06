@@ -31,8 +31,8 @@ rm *.pyc
 
 
 cd '/home/pitch/Desktop/Mercenaries Project/MS/compiled'
-cp *.txt '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules/Mercenaries/'
 cp *.txt '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries/'
+cp -rf '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries' '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules'
 echo Updated Server Files.
 echo Updated Client Files.
 echo Compiling was successful!
