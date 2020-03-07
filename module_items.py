@@ -2515,9 +2515,6 @@ items = [
 #### narf plate armour
 
 
-
-["flamberge",         "Flamberge Zweihander", [("flamberge",0)], itp_type_polearm|itp_merchandise|itp_always_loot|itp_two_handed|itp_primary, itc_staff|itcf_carry_sword_back,
- 1123 , weight(3.75)|difficulty(11)|spd_rtng(77) | weapon_length(125)|swing_damage(50, cut) | thrust_damage(28 ,  pierce),imodbits_sword_high ],
 ["chapel-de-fer", "Dhapel-de-Fer", [("chapel-de-fer",0)], itp_merchandise| itp_type_head_armor,0, 293 , weight(1.5)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["plate_mittens","Plate Mittens", [("plate_mittens_L",imodbit_reinforced)], itp_merchandise|itp_type_hand_armor,0, 1940, weight(1.5)|abundance(100)|body_armor(9)|difficulty(0),imodbits_armor],
 ["bnw_gauntlets","Black and White Gauntlets", [("bnw_gauntlet_R",imodbit_reinforced)], itp_merchandise|itp_type_hand_armor,0, 2240, weight(1.75)|abundance(100)|body_armor(8)|difficulty(0),imodbits_armor],
@@ -2535,6 +2532,12 @@ items = [
 ["bnw_armour", "Black and White Armour", [("bnw_armour_stripes",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
 
+
+
+
+
+["flamberge", "Knightly Arming Sword", [("flamberge",0)], itp_type_polearm|itp_no_blur|itp_merchandise|itp_next_item_as_melee|itp_primary, itc_staff|itcf_carry_sword_back, 425 , weight(3.75)|difficulty(11)|spd_rtng(77)| weapon_length(125)|swing_damage(50 , cut) | thrust_damage(28 ,  pierce),imodbits_sword ],
+["flamberge_alt", "Knightly Arming Sword", [("flamberge",0)], itp_type_polearm|itp_no_blur|itp_two_handed|itp_unbalanced|itp_offset_musket|itp_cant_use_on_horseback|itp_primary, itc_staff|itp_crush_through|itcf_carry_sword_back, 425 , weight(3.5)|difficulty(11)|spd_rtng(77) | weapon_length(102)|swing_damage(40, blunt) | thrust_damage(1,  blunt),imodbits_sword ],
 
 
 ["items_end", "End of list", [("shield_round_a",0)], 0, 0, 1, 0, 0],

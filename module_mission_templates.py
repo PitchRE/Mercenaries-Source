@@ -151,71 +151,73 @@ multiplayer_set_map_weather = (
     (try_begin),
       (eq, ":cur_scene", "scn_mp_new_3"),
 
-      (set_skybox, 13, 13), 
+      (set_skybox, 1, 1), 
 
      
 	(else_try),
       (eq, ":cur_scene", "scn_mp_old_castle"),
-      (set_skybox, 14, 14), 
+      (set_skybox, 1, 1), 
 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_arena"),
-      (set_skybox, 15, 15), 
+      (set_skybox, 2, 2), 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_swamp_delta"),
    
-      (set_skybox, 16, 16),
+      (set_skybox, 3, 3),
 
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_polya"),
  
-      (set_skybox, 17, 17),
+      (set_skybox, 4, 4),
+     (set_global_cloud_amount, 50),
+     (set_global_haze_amount, 50),
     
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hillroad"),
-    (set_skybox, 18, 18),
+    (set_skybox, 5, 5),
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hutor"),
 
-      (set_skybox, 19, 19), #skybox_cloud_1
+      (set_skybox, 6, 6), #skybox_cloud_1
 
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_marketplace"),
      
-   (set_skybox, 20, 20),
+   (set_skybox, 7, 7),
 
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_forest_edge"),
       
-      (set_skybox, 21, 21),
+      (set_skybox, 8, 8),
  
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_forest_road"),
 
-      (set_skybox, 22, 22),
+      (set_skybox, 9, 9),
   
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_river_village"),
   
-      (set_skybox, 23, 23), 
+      (set_skybox, 10, 10), 
      
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_nomad_camp"),
 
-      (set_skybox, 24,24), #skybox_cloud_1
+      (set_skybox, 11,11), #skybox_cloud_1
 
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_swed_zamok"),
  
-      (set_skybox, 25, 25), #skybox_cloud_1
+      (set_skybox, 12, 12), #skybox_cloud_1
      
 
 	(else_try),
