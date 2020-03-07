@@ -150,167 +150,103 @@ multiplayer_set_map_weather = (
     (store_current_scene, ":cur_scene"),
     (try_begin),
       (eq, ":cur_scene", "scn_mp_new_3"),
-      (scene_set_day_time, 6),
-      (set_skybox, 14, 15), #skybox_cloud_1
-      (set_fog_distance, 200, 0xFF60545B),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,188,180,140),
-      (set_startup_ambient_light,6,4,2),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 13, 13), 
+
+     
 	(else_try),
       (eq, ":cur_scene", "scn_mp_old_castle"),
-      (scene_set_day_time, 18),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 1200, 0xFF957757),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,620,484,216),
-      (set_startup_ambient_light,90,105,123),
-      (set_startup_ground_ambient_light,80,70,50),
+      (set_skybox, 14, 14), 
+
 	(else_try),
       (eq, ":cur_scene", "scn_mp_arena"),
- #     (scene_set_day_w
- #     (set_skybox, 7, 8), #skybox_cloud_1
- #     (set_fog_distance, 700, 0xFFa49684),
- #     (set_fixed_point_multiplier,255),
- #     (set_startup_sun_light,1020,864,468),
- #     (set_startup_ambient_light,43,33,10),
- #     (set_startup_ground_ambient_light,80,70,50),
+      (set_skybox, 15, 15), 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_swamp_delta"),
-      (scene_set_day_time, 15),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 300, 0xFFa7a190),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,420,330,276),
-      (set_startup_ambient_light,68,78,62),
-      (set_startup_ground_ambient_light,80,70,50),
+   
+      (set_skybox, 16, 16),
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_polya"),
-      (scene_set_day_time, 15),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1400, 0xFF9a7533),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,414,358,196),
-      (set_startup_ambient_light,83,64,52),
-      (set_startup_ground_ambient_light,80,70,50),
+ 
+      (set_skybox, 17, 17),
+    
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hillroad"),
-#      (scene_set_day_time, 10),
-#      (set_skybox, 5,6), #skybox_cloud_1
-#	  (set_rain, 1,100),
-#      (set_fog_distance, 500, 0xFF947f54),
-#      (set_fixed_point_multiplier,255),
-#      (set_startup_sun_light,312,272,108),
-#      (set_startup_ambient_light,146,119,90),
-#      (set_startup_ground_ambient_light,80,70,50),
+    (set_skybox, 18, 18),
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hutor"),
-      (scene_set_day_time, 7),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1400, 0xFF978d78),
-      (set_fixed_point_multiplier,250),
-      (set_startup_sun_light,432,322,150),
-      (set_startup_ambient_light,58,49,37),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 19, 19), #skybox_cloud_1
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_marketplace"),
-      (scene_set_day_time, 11),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1800, 0xFF967049),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,256,196,102),
-      (set_startup_ambient_light,30,25,32),
-      (set_startup_ground_ambient_light,80,70,50),
+     
+   (set_skybox, 20, 20),
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_forest_edge"),
-      (scene_set_day_time, 13),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1300, 0xFFafaf95),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,320,228,136),
-      (set_startup_ambient_light,77,54,12),
-      (set_startup_ground_ambient_light,80,70,50),
+      
+      (set_skybox, 21, 21),
+ 
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_forest_road"),
-      (scene_set_day_time, 10),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 1000, 0xa88848),
-      (set_fixed_point_multiplier,200),
-      (set_startup_sun_light,620,440,240),
-      (set_startup_ambient_light,58,76,101),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 22, 22),
+  
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_river_village"),
-      (scene_set_day_time, 10),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 700, 0xFF969866),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,564,470,396),
-      (set_startup_ambient_light,45,60,53),
-      (set_startup_ground_ambient_light,80,70,50),
+  
+      (set_skybox, 23, 23), 
+     
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_nomad_camp"),
-      (scene_set_day_time, 15),
-      (set_skybox, 14,15), #skybox_cloud_1
-      (set_fog_distance, 250, 0xFF928054),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,412,328,188),
-      (set_startup_ambient_light,62,37,12),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 24,24), #skybox_cloud_1
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_swed_zamok"),
-      (scene_set_day_time, 15),
-      (set_skybox, 10, 11), #skybox_cloud_1
-      (set_fog_distance, 170, 0xFFaa9c86),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,48,56,40),
-      (set_startup_ambient_light,31,31,31),
-      (set_startup_ground_ambient_light,80,70,50),
+ 
+      (set_skybox, 25, 25), #skybox_cloud_1
+     
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_novgorod_fortress"),
       (scene_set_day_time, 15),
       (set_skybox, 10, 11), #skybox_cloud_1
       (set_fog_distance, 1400, 0xFF92774a),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,272,180,124),
-      (set_startup_ambient_light,23,14,0),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_rus_fortress"),
       (scene_set_day_time, 15),
       (set_skybox, 8, 9), #skybox_cloud_1
       (set_fog_distance, 1200, 0xFF867361),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,628,548,428),
-      (set_startup_ambient_light,88,66,41),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_mosk_monastyr"),
       (scene_set_day_time, 15),
       (set_skybox, 10, 11), #skybox_cloud_1
-      (set_fog_distance, 1200, 0xFF46371b),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,624,544,328),
-      (set_startup_ambient_light,29,33,41),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_new_1"),
       (scene_set_day_time, 15),
       (set_skybox, 8, 9), #skybox_cloud_1
       (set_fog_distance, 800, 0xFF9a8f5e),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,372,272,84),
-      (set_startup_ambient_light,49,45,34),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_new_2"),
       (scene_set_day_time, 17),
       (set_skybox, 8, 9), #skybox_cloud_1
       (set_fog_distance, 1200, 0xFFaf9067),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,460,304,56),
-      (set_startup_ambient_light,29,25,10),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	  
 	  
 	  
