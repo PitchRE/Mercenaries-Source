@@ -597,7 +597,7 @@ animations = [
 ##   [1.4, "anim_human", horse_move+820, horse_move+837,  arf_blend_in_16],
 ##   [2.4, "anim_human", horse_move+820, horse_move+837,  arf_blend_in_16],
  ##  [1.7, "anim_human_02", 265, 297,  arf_blend_in_8],
- [1.2, "command", 0, 31,arf_cyclic|arf_use_stand_progress, 0, (0, 0, 0), 0.0],
+ [1.7, "anim_human_02", 265, 297, arf_blend_in_8],
  ],
  ["ride_spur", acf_enforce_lowerbody, amf_play|amf_priority_jump,
    [0.3, "anim_human", horse_move+860, horse_move+865,  arf_blend_in_8],
