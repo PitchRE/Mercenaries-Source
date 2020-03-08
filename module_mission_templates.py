@@ -81,6 +81,17 @@ helmet_visors = ( #decide what equipment the troops get
  ])
 
 
+whistle_horse = ( #decide what equipment the troops get
+ 0, 0, 0, [(key_clicked, key_c)], 
+ [
+
+   (multiplayer_get_my_player, ":player"), # Get player info
+  (player_get_agent_id, ":agent_id", ":player"),
+ (call_script, "script_whistle_horse", ":player", ":agent_id"),#Use script to change helmet
+ 	(display_message,"@You whistle for a horse!",0x6495ed),	
+
+ ])
+
 
 
 
@@ -7831,6 +7842,7 @@ mission_templates = [
       multiplayer_server_check_polls,
 	  multiplayer_set_map_weather,
     helmet_visors,
+    whistle_horse,
 	  
         (ti_server_player_joined, 0, 0, [],
         [(multiplayer_is_server),

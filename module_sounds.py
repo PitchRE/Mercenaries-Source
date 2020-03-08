@@ -205,6 +205,7 @@ sounds = [
  ("horse_breath",sf_priority_7|sf_vol_10, ["horse_breath_4.ogg","horse_breath_5.ogg","horse_breath_6.ogg","horse_breath_7.ogg"]),
  ("horse_snort",sf_priority_5|sf_vol_7, ["horse_snort_1.ogg","horse_snort_2.ogg","horse_snort_3.ogg","horse_snort_4.ogg","horse_snort_5.ogg"]),
  ("horse_low_whinny",sf_vol_9, ["horse_whinny-1.ogg","horse_whinny-2.ogg"]),
+  ("whistle",sf_vol_9, ["whistle.ogg"]),
  ("block_fist",0, ["block_fist_3.ogg","block_fist_4.ogg"]),
  ("man_hit_blunt_weak",sf_priority_5|sf_vol_10, ["man_hit_13.ogg","man_hit_29.ogg","man_hit_32.ogg","man_hit_47.ogg","man_hit_57.ogg"]),
  ("man_hit_blunt_strong",sf_priority_5|sf_vol_10, ["man_hit_13.ogg","man_hit_29.ogg","man_hit_32.ogg","man_hit_47.ogg","man_hit_57.ogg"]),

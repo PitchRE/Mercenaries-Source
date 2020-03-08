@@ -779,5 +779,6 @@ script_multiplayer_ccoop_start_player_and_squad_respawn_period = 777
 script_multiplayer_upgrade_player_equipment = 778
 script_mp_calculate_auto_squad_size = 779
 script_agent_equip_sync_multiplayer = 780
+script_whistle_horse = 781
 
 

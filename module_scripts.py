@@ -11,6 +11,7 @@ from header_terrain_types import *
 from header_music import *
 from header_presentations import *
 from ID_animations import *
+from ID_sounds import *
 
 
 ####################################################################################################################
@@ -8451,14 +8452,34 @@ scripts = [
     (display_message, "@ [1] "),
     (agent_equip_item, ":agent_id", ":value_2"), 
     (get_max_players, ":max_players"),
+       (agent_play_sound, ":agent_id", 99),
     (try_for_range, ":other_player_id", 1, ":max_players"),
     (player_is_active, ":other_player_id"),   
-     (agent_play_sound, ":agent_id", 99),
+  
     (multiplayer_send_3_int_to_player, ":value_1", multiplayer_event_data_client, 1, ":agent_id",  ":value_2"),
     (try_end),
+    #### VISOR OPEN/CLOSE END
+    (else_try),
+  (eq, ":event_type_custom", 2),
+# horse whistle
+
+      (agent_get_position, pos1, ":value_2"),
+   (agent_play_sound, ":value_2", snd_whistle),
+   (assign, ":is_whistled", 0),
+	(try_for_agents,":agent"),
+	
+         (agent_is_alive,":agent"),
+         (neg|agent_is_human,":agent"),
+		 (agent_get_position, pos2, ":agent"),
+		 (get_distance_between_positions,":distance",pos2,pos1),
+		 (ge,":distance",250),
+(eq, ":is_whistled", 0),
+(agent_set_scripted_destination,":agent",pos1,1),
+  (assign, ":is_whistled", 1),
+	(try_end),	
     (try_end),
 
-#### VISOR OPEN/CLOSE END
+
 
 
       (else_try),
@@ -46124,6 +46145,18 @@ scripts = [
 (try_end),
        
  ]),
+
+  ("whistle_horse",
+   [(store_script_param, ":player", 1),
+   (store_script_param, ":agent", 2),
+    
+      (try_begin),
+(multiplayer_send_3_int_to_server, multiplayer_event_data_server, 2, ":player", ":agent"),
+(try_end),
+       
+ ]),
+
+
 	
 ]
 
