@@ -8447,16 +8447,14 @@ scripts = [
           (eq, ":event_type_custom", 1),
              (assign, reg5, ":value_1"),
      
-    (display_message, "@ event player id {reg5}"),
     (player_get_agent_id, ":agent_id", ":value_1"),
-    (display_message, "@ [1] "),
     (agent_equip_item, ":agent_id", ":value_2"), 
     (get_max_players, ":max_players"),
-       (agent_play_sound, ":agent_id", 99),
+     
     (try_for_range, ":other_player_id", 1, ":max_players"),
     (player_is_active, ":other_player_id"),   
   
-    (multiplayer_send_3_int_to_player, ":value_1", multiplayer_event_data_client, 1, ":agent_id",  ":value_2"),
+    (multiplayer_send_3_int_to_player, ":other_player_id", multiplayer_event_data_client, 1, ":agent_id",  ":value_2"),
     (try_end),
     #### VISOR OPEN/CLOSE END
     (else_try),
@@ -9271,7 +9269,11 @@ scripts = [
           
       (try_begin),
       (eq, ":event_type_custom", 1),
+      (assign, reg40, ":value_1"),
+        (assign, reg41, ":value_2"),
+      (display_message, "@ agent id {reg40}, weapon {reg41}"),
       (agent_equip_item, ":value_1", ":value_2"), 
+        (agent_play_sound, ":value_1", 99),
       (try_end),
                     
             ### HELMET VISOR SCRIPT END ####
