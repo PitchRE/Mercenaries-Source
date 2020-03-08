@@ -56,6 +56,36 @@ oim_duel_equip_alevtina_hanum = [itm_tatar_halat_b, itm_tatar_bayrak_hat, itm_sa
 
 ##OiM Mp code:
 
+
+
+helmet_visors = ( #decide what equipment the troops get
+ 0, 0, 0, [(key_clicked, key_q)], 
+ [
+   (store_trigger_param_1, ":agent_id"),
+   (multiplayer_get_my_player, ":player"), # Get player info
+   #(multiplayer_get_my_troop, ":trooptype"), #Incase you want to do it only for certain troops
+   (player_get_agent_id, ":agent_id", ":player"), # Get agent ID of player
+   (agent_get_item_slot,":item_needed",":agent_id",4), # Get item slot for head
+   (try_begin),
+    # (eq, ":trooptype", "trp_scottish_royal_knight"), # If you want to use it for more han 1 use this_or_next
+	(try_begin),
+     (eq, ":item_needed", "itm_pigface_klappvisor_open"), # Make sure agent has this item
+     (call_script, "script_agent_equip_sync_multiplayer", ":agent_id", "itm_pigface_klappvisor"),#Use script to change helmet
+	(else_try),
+	 (eq, ":item_needed", "itm_pigface_klappvisor"), # Make sure agent has this item
+     (call_script, "script_agent_equip_sync_multiplayer", ":agent_id", "itm_pigface_klappvisor_open"),#Use script to change helmet
+	(else_try),
+	 (display_message, "@Your helmet has no visor!"), # Display message for player trying to change helemt
+    (try_end),
+  (try_end),    
+ ])
+
+
+
+
+
+
+
 oim_common_ladders_system_init = (
   ti_before_mission_start, 0, 0, [],
   [
@@ -7800,6 +7830,7 @@ mission_templates = [
 
       multiplayer_server_check_polls,
 	  multiplayer_set_map_weather,
+    helmet_visors,
 	  
         (ti_server_player_joined, 0, 0, [],
         [(multiplayer_is_server),

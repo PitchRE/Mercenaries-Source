@@ -160,6 +160,7 @@ multiplayer_event_pass_troop_data = 127
 multiplayer_event_send_updated_troop_prof = 120
 multiplayer_event_send_updated_troop_attribute = 121
 multiplayer_event_send_updated_troop_skill = 122
+multiplayer_event_data                           = 123
 #Illuminati
 
 #multiplayer message types

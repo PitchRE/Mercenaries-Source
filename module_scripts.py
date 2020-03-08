@@ -9212,7 +9212,24 @@ scripts = [
       (store_script_param, ":value", 5),
       (troop_raise_skill, ":troop_id", ":skill_id", ":value"),
       (try_end),
+      ### many events pitch
           (else_try),
+        ###
+          (eq, ":event_type", multiplayer_event_data),
+          (store_script_param, ":event_type", 3),
+           (store_script_param, ":value_1", 4),
+            (store_script_param, ":value_2", 5),
+            (try_begin),
+  (eq, ":event_type", 1),
+
+(agent_equip_item, ":value_1", ":value_2"),
+  (try_end),
+
+
+          (else_try),
+
+
+          #### pitch
         ###
           (eq, ":event_type", multiplayer_event_return_changing_game_type_allowed),
           (store_script_param, ":value", 3),
@@ -46069,6 +46086,22 @@ scripts = [
 			(try_end),
 		(try_end), 
 	]),
+
+  ("agent_equip_sync_multiplayer",
+   [(store_script_param, ":agent_id", 1),
+    (store_script_param, ":item_id", 2),
+
+    (try_begin),
+      (agent_is_active, ":agent_id"),
+      (agent_is_alive, ":agent_id"),
+      (agent_equip_item, ":agent_id", ":item_id"),
+      (get_max_players, ":max_players"),
+      (try_for_range, ":other_player_id", 1, ":max_players"),
+        (player_is_active, ":other_player_id"),
+        (multiplayer_send_3_int_to_player, ":other_player_id", multiplayer_event_data, 1, ":agent_id", ":item_id"),
+      (try_end),
+    (try_end),
+    ]),
 	
 ]
 
