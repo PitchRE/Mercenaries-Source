@@ -70,10 +70,10 @@ helmet_visors = ( #decide what equipment the troops get
     # (eq, ":trooptype", "trp_scottish_royal_knight"), # If you want to use it for more han 1 use this_or_next
 	(try_begin),
      (eq, ":item_needed", "itm_pigface_klappvisor_open"), # Make sure agent has this item
-     (call_script, "script_agent_equip_sync_multiplayer", ":agent_id", "itm_pigface_klappvisor"),#Use script to change helmet
+     (call_script, "script_agent_equip_sync_multiplayer", ":player", "itm_pigface_klappvisor"),#Use script to change helmet
 	(else_try),
 	 (eq, ":item_needed", "itm_pigface_klappvisor"), # Make sure agent has this item
-     (call_script, "script_agent_equip_sync_multiplayer", ":agent_id", "itm_pigface_klappvisor_open"),#Use script to change helmet
+     (call_script, "script_agent_equip_sync_multiplayer", ":player", "itm_pigface_klappvisor_open"),#Use script to change helmet
 	(else_try),
 	 (display_message, "@Your helmet has no visor!"), # Display message for player trying to change helemt
     (try_end),

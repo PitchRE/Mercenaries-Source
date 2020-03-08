@@ -8435,6 +8435,33 @@ scripts = [
           (try_end),
         (try_end),
       (else_try),
+        (eq, ":event_type", multiplayer_event_data_server),
+      (store_script_param, ":event_type_custom", 3),
+        (store_script_param, ":value_1", 4),
+          (store_script_param, ":value_2", 5),
+
+
+#### VISOR OPEN/CLOSE BEGIN
+        (try_begin),
+          (eq, ":event_type_custom", 1),
+             (assign, reg5, ":value_1"),
+     
+    (display_message, "@ event player id {reg5}"),
+    (player_get_agent_id, ":agent_id", ":value_1"),
+    (display_message, "@ [1] "),
+    (agent_equip_item, ":agent_id", ":value_2"), 
+    (get_max_players, ":max_players"),
+    (try_for_range, ":other_player_id", 1, ":max_players"),
+    (player_is_active, ":other_player_id"),   
+     (agent_play_sound, ":agent_id", 99),
+    (multiplayer_send_3_int_to_player, ":value_1", multiplayer_event_data_client, 1, ":agent_id",  ":value_2"),
+    (try_end),
+    (try_end),
+
+#### VISOR OPEN/CLOSE END
+
+
+      (else_try),
         (eq, ":event_type", multiplayer_event_open_game_rules),
         (try_begin),
           #no validity check
@@ -9212,25 +9239,26 @@ scripts = [
       (store_script_param, ":value", 5),
       (troop_raise_skill, ":troop_id", ":skill_id", ":value"),
       (try_end),
-      ### many events pitch
-          (else_try),
-        ###
-          (eq, ":event_type", multiplayer_event_data),
-          (store_script_param, ":event_type", 3),
+           (else_try),
+      ### SUB EVENTS CLIENT PITCH BEGIN
+          (eq, ":event_type", multiplayer_event_data_client),
+          (store_script_param, ":event_type_custom", 3),
            (store_script_param, ":value_1", 4),
             (store_script_param, ":value_2", 5),
-            (try_begin),
-  (eq, ":event_type", 1),
+                     
+            ### HELMET VISOR SCRIPT BEGIN #####
+          
+      (try_begin),
+      (eq, ":event_type_custom", 1),
+      (agent_equip_item, ":value_1", ":value_2"), 
+      (try_end),
+                    
+            ### HELMET VISOR SCRIPT END ####
+          
 
-(agent_equip_item, ":value_1", ":value_2"),
-  (try_end),
-
-
-          (else_try),
-
-
-          #### pitch
-        ###
+ 
+   ### SUB EVENTS CLIENT PITCH END
+    (else_try),
           (eq, ":event_type", multiplayer_event_return_changing_game_type_allowed),
           (store_script_param, ":value", 3),
           (assign, "$g_multiplayer_changing_game_type_allowed", ":value"),
@@ -46088,20 +46116,14 @@ scripts = [
 	]),
 
   ("agent_equip_sync_multiplayer",
-   [(store_script_param, ":agent_id", 1),
-    (store_script_param, ":item_id", 2),
-
-    (try_begin),
-      (agent_is_active, ":agent_id"),
-      (agent_is_alive, ":agent_id"),
-      (agent_equip_item, ":agent_id", ":item_id"),
-      (get_max_players, ":max_players"),
-      (try_for_range, ":other_player_id", 1, ":max_players"),
-        (player_is_active, ":other_player_id"),
-        (multiplayer_send_3_int_to_player, ":other_player_id", multiplayer_event_data, 1, ":agent_id", ":item_id"),
-      (try_end),
-    (try_end),
-    ]),
+   [(store_script_param, ":player", 1),
+      (store_script_param, ":item_id", 2),
+      (try_begin),
+      (assign, reg5, ":player"),
+(multiplayer_send_3_int_to_server, multiplayer_event_data_server, 1, ":player",  ":item_id"),
+(try_end),
+       
+ ]),
 	
 ]
 
