@@ -80,7 +80,7 @@ items = [
  137 , weight(1.5)|spd_rtng(100) | weapon_length(69)|swing_damage(24 , blunt) | thrust_damage(0 ,  pierce),imodbits_axe ],
  ["arena_sword", "Sword", [("arena_sword_one_handed",0),("sword_medieval_b_scabbard", ixmesh_carry),], itp_type_one_handed_wpn|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  243 , weight(1.5)|spd_rtng(99) | weapon_length(95)|swing_damage(22 , blunt) | thrust_damage(20 ,  blunt),imodbits_sword_high ],
- ["arena_sword_two_handed", "Two Handed Sword", [("arena_sword_two_handed",0)], itp_type_two_handed_wpn|itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back,
+ ["arena_sword_two_handed", "Two Handed Sword", [("arena_sword_two_handed",0)], itp_type_two_handed_wpn|itp_next_item_as_melee|itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back,
  670 , weight(2.75)|spd_rtng(93) | weapon_length(110)|swing_damage(30 , blunt) | thrust_damage(24 ,  blunt),imodbits_sword_high ],
  ["arena_lance", "Lance", [("arena_lance",0)], itp_couchable|itp_type_polearm|itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_staff|itcf_carry_spear,
  90 , weight(2.5)|spd_rtng(96) | weapon_length(150)|swing_damage(20 , blunt) | thrust_damage(25 ,  blunt),imodbits_polearm ],
@@ -2537,7 +2537,9 @@ items = [
 
 
 ["flamberge", "Knightly Arming Sword", [("flamberge",0)], itp_type_polearm|itp_no_blur|itp_merchandise|itp_next_item_as_melee|itp_primary, itc_staff|itcf_carry_sword_back, 425 , weight(3.75)|difficulty(11)|spd_rtng(77)| weapon_length(125)|swing_damage(50 , cut) | thrust_damage(28 ,  pierce),imodbits_sword ],
-["flamberge_alt", "Knightly Arming Sword", [("flamberge",0)], itp_type_polearm|itp_no_blur|itp_two_handed|itp_unbalanced|itp_offset_musket|itp_cant_use_on_horseback|itp_primary, itc_staff|itp_crush_through|itcf_carry_sword_back, 425 , weight(3.5)|difficulty(11)|spd_rtng(77) | weapon_length(102)|swing_damage(40, blunt) | thrust_damage(1,  blunt),imodbits_sword ],
+["flamberge_alt", "Knightly Arming Sword", [("flamberge",0)], itp_type_polearm|itp_no_blur|itp_two_handed|itp_unbalanced|itp_cant_use_on_horseback|itp_primary, itc_spear|itp_crush_through|itcf_carry_sword_back, 425 , weight(3.5)|difficulty(11)|spd_rtng(78) | weapon_length(102)|swing_damage(40, blunt) | thrust_damage(48,  pierce),imodbits_sword ],
+
+
 
 
 ["items_end", "End of list", [("shield_round_a",0)], 0, 0, 1, 0, 0],
