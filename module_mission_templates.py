@@ -201,11 +201,12 @@ multiplayer_set_map_weather = (
 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_arena"),
+      (set_fog_distance, 150, 0xffc0cb),
       (set_skybox, 2, 2), 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_swamp_delta"),
    
-      (set_skybox, 3, 3),
+      (set_skybox, 50, 24),
 
 
 	(else_try),
@@ -218,7 +219,7 @@ multiplayer_set_map_weather = (
 
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hillroad"),
-    (set_skybox, 5, 5),
+    (set_skybox, 20, 46),
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hutor"),
 
@@ -234,7 +235,7 @@ multiplayer_set_map_weather = (
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_forest_edge"),
       
-      (set_skybox, 8, 8),
+      (set_skybox, 24, 53),
  
 
 	(else_try),
