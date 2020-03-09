@@ -6,6 +6,7 @@ from header_sounds import *
 from header_music import *
 from header_items import *
 from module_constants import *
+from header_skills import *
 
 ####################################################################################################################
 #   Each mission-template is a tuple that contains the following fields:
@@ -7854,13 +7855,65 @@ mission_templates = [
         ]),
 		
 		(ti_on_player_exit, 0, 0, [],
-		[(multiplayer_is_server),
-		(store_trigger_param_1, ":exiting_player_no"),
+		[
+   
+   (multiplayer_is_server),
+   (store_trigger_param_1, ":exiting_player_no"),
+     (player_get_troop_id, ":player_troop_id", ":exiting_player_no"),
+
 		(player_set_slot, ":exiting_player_no", slot_player_data_was_loaded, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_game_points, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_round_points, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_round_kills, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_round_deaths, 0),
+
+   (try_begin),
+  (store_proficiency_level, reg10, ":player_troop_id", wpt_one_handed_weapon),
+  (store_proficiency_level, reg11, ":player_troop_id", wpt_two_handed_weapon), 
+   (store_proficiency_level, reg12, ":player_troop_id", wpt_polearm), 
+   (store_proficiency_level, reg13, ":player_troop_id", wpt_archery), 
+   (store_proficiency_level, reg14, ":player_troop_id", wpt_throwing), 
+   (store_proficiency_level, reg15, ":player_troop_id", wpt_crossbow), 
+  (store_proficiency_level, reg16, ":player_troop_id", wpt_firearm), 
+
+
+(store_attribute_level, reg8, ":player_troop_id", ca_strength),
+(store_attribute_level, reg9, ":player_troop_id", ca_agility),
+
+ (store_skill_level, reg20, skl_ironflesh, ":player_troop_id"),
+  (store_skill_level, reg21, skl_power_strike, ":player_troop_id"),
+   (store_skill_level, reg22, skl_power_throw, ":player_troop_id"),
+    (store_skill_level, reg23, skl_power_draw, ":player_troop_id"),
+     (store_skill_level, reg24, skl_shield, ":player_troop_id"),
+      (store_skill_level, reg25, skl_athletics, ":player_troop_id"),
+       (store_skill_level, reg26, skl_riding, ":player_troop_id"),
+         (store_skill_level, reg27, skl_horse_archery, ":player_troop_id"),
+
+    	(troop_raise_skill, ":player_troop_id", skl_ironflesh, -reg20),
+			(troop_raise_skill, ":player_troop_id", skl_power_strike, -reg21),
+			(troop_raise_skill, ":player_troop_id", skl_power_throw, -reg22),
+			(troop_raise_skill, ":player_troop_id", skl_power_draw, -reg23),
+  
+			(troop_raise_skill, ":player_troop_id", skl_shield, -reg24),
+			(troop_raise_skill, ":player_troop_id", skl_athletics, -reg25),
+			(troop_raise_skill, ":player_troop_id", skl_riding, -reg26),
+      			(troop_raise_skill, ":player_troop_id", skl_horse_archery, -reg27),
+			
+			(troop_raise_proficiency, ":player_troop_id", wpt_one_handed_weapon, -reg10),
+			(troop_raise_proficiency, ":player_troop_id", wpt_two_handed_weapon, -reg11),
+			(troop_raise_proficiency, ":player_troop_id", wpt_polearm, -reg12),
+			(troop_raise_proficiency, ":player_troop_id", wpt_archery, -reg13),
+			(troop_raise_proficiency, ":player_troop_id", wpt_throwing, -reg14),  
+      (troop_raise_proficiency, ":player_troop_id", wpt_crossbow, -reg15),
+      (troop_raise_proficiency, ":player_troop_id", wpt_firearm, -reg16),
+
+      			(troop_raise_attribute, ":player_troop_id", ca_strength, -reg8),
+			(troop_raise_attribute, ":player_troop_id", ca_agility, -reg19),
+
+
+(try_end),
+
+
 		#reset the troop here aswell
 		#get value of the skill/profencie
 		#then just minus raise the skill/profencie with the value you got
