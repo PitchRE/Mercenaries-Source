@@ -7853,7 +7853,7 @@ scripts = [
             (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
                   (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
       (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
-    					(str_store_string, s60, "@Experience:{reg12} ^Login: {reg50} ^Password: {s0}"),
+    					(str_store_string, s60, "@Login: {reg3} ^Password: {s0}"),
     	(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, s60),
 		(else_try),
 			(eq, ":return_code", -3), #Character not bound to this account
@@ -7962,7 +7962,7 @@ scripts = [
 		   (str_store_string, s12, "str_server_identifier"),
 		   (str_store_string, s13, "str_server_password"),
 		   (str_store_string, s14, "@{s11}checkplayer?sid={s12}&spa={s13}&name={s10}&guid={reg10}&pid={reg11}"),
-		  (display_message, s14),
+
        (send_message_to_url, s14, 1),
 		 (try_end),
 		 ]),

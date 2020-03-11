@@ -8179,7 +8179,6 @@ mission_templates = [
          (try_for_range, ":player_no", 1, ":num_players"), #0 is server so starting from 1
            (player_is_active, ":player_no"),
               (player_get_troop_id, ":player_troop_id", ":player_no"),
-
   (store_proficiency_level, reg10, ":player_troop_id", wpt_one_handed_weapon),
   (store_proficiency_level, reg11, ":player_troop_id", wpt_two_handed_weapon), 
    (store_proficiency_level, reg12, ":player_troop_id", wpt_polearm), 
