@@ -7822,7 +7822,6 @@ scripts = [
 			(else_try),
 				(eq, reg2, 0), #Player did not level up
 				(str_store_string, s60, "@You got {reg3} experience ({reg8} EXP needed to level up)!"),
-          (multiplayer_send_string_to_player, ":player_id", multiplayer_event_show_server_message  , s60),
 				(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, s60),
 				(player_set_slot, ":player_id", slot_player_experience_to_next_level, reg5),
 				(player_set_slot, ":player_id", slot_player_level, reg4),
@@ -7854,7 +7853,8 @@ scripts = [
             (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
                   (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
       (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
-      (kick_player, ":player_id"),
+    					(str_store_string, s60, "@Experience:{reg12} ^Login: {reg50} ^Password: {s0}"),
+    	(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, s60),
 		(else_try),
 			(eq, ":return_code", -3), #Character not bound to this account
 			(player_is_active, reg1),
