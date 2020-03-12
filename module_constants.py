@@ -806,6 +806,7 @@ slot_player_bot_type_4_wanted                  = 38
 slot_player_spawn_count                        = 39
 slot_player_captain_bot_data_begin             = 40
 slot_player_captain_bot_data_end               = slot_player_captain_bot_data_begin + 12 # there are 12 bot types for each faction
+slot_player_reload_disabled_until_time           = 89
 
 
 #Illuminati

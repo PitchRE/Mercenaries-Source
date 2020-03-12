@@ -6,6 +6,7 @@ from header_sounds import *
 from header_music import *
 from header_items import *
 from module_constants import *
+from header_skills import *
 
 ####################################################################################################################
 #   Each mission-template is a tuple that contains the following fields:
@@ -55,6 +56,47 @@ oim_hand_to_hand = [itm_mosk_sermyaga, itm_selo_boots]
 oim_duel_equip_alevtina_hanum = [itm_tatar_halat_b, itm_tatar_bayrak_hat, itm_sablya_tatar_a, itm_pistol_b, itm_norm_bullets, itm_janissary_tapki] 
 
 ##OiM Mp code:
+
+
+
+helmet_visors = ( #decide what equipment the troops get
+ 0, 0, 5, [(key_clicked, key_q)], 
+ [
+   (store_trigger_param_1, ":agent_id"),
+   (multiplayer_get_my_player, ":player"), # Get player info
+   #(multiplayer_get_my_troop, ":trooptype"), #Incase you want to do it only for certain troops
+   (player_get_agent_id, ":agent_id", ":player"), # Get agent ID of player
+   (agent_get_item_slot,":item_needed",":agent_id",4), # Get item slot for head
+   (try_begin),
+    # (eq, ":trooptype", "trp_scottish_royal_knight"), # If you want to use it for more han 1 use this_or_next
+	(try_begin),
+     (eq, ":item_needed", "itm_pigface_klappvisor_open"), # Make sure agent has this item
+     (call_script, "script_agent_equip_sync_multiplayer", ":player", "itm_pigface_klappvisor"),#Use script to change helmet
+	(else_try),
+	 (eq, ":item_needed", "itm_pigface_klappvisor"), # Make sure agent has this item
+     (call_script, "script_agent_equip_sync_multiplayer", ":player", "itm_pigface_klappvisor_open"),#Use script to change helmet
+	(else_try),
+	 (display_message, "@Your helmet has no visor!"), # Display message for player trying to change helemt
+    (try_end),
+  (try_end),    
+ ])
+
+
+whistle_horse = ( #decide what equipment the troops get
+ 0, 0, 60, [(key_clicked, key_c)], 
+ [
+
+   (multiplayer_get_my_player, ":player"), # Get player info
+  (player_get_agent_id, ":agent_id", ":player"),
+ (call_script, "script_whistle_horse", ":player", ":agent_id"),#Use script to change helmet
+ 	(display_message,"@You whistle for a horse!",0x6495ed),	
+
+ ])
+
+
+
+
+
 
 oim_common_ladders_system_init = (
   ti_before_mission_start, 0, 0, [],
@@ -150,167 +192,106 @@ multiplayer_set_map_weather = (
     (store_current_scene, ":cur_scene"),
     (try_begin),
       (eq, ":cur_scene", "scn_mp_new_3"),
-      (scene_set_day_time, 6),
-      (set_skybox, 14, 15), #skybox_cloud_1
-      (set_fog_distance, 200, 0xFF60545B),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,188,180,140),
-      (set_startup_ambient_light,6,4,2),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 1, 1), 
+
+     
 	(else_try),
       (eq, ":cur_scene", "scn_mp_old_castle"),
-      (scene_set_day_time, 18),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 1200, 0xFF957757),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,620,484,216),
-      (set_startup_ambient_light,90,105,123),
-      (set_startup_ground_ambient_light,80,70,50),
+      (set_skybox, 1, 1), 
+
 	(else_try),
       (eq, ":cur_scene", "scn_mp_arena"),
- #     (scene_set_day_w
- #     (set_skybox, 7, 8), #skybox_cloud_1
- #     (set_fog_distance, 700, 0xFFa49684),
- #     (set_fixed_point_multiplier,255),
- #     (set_startup_sun_light,1020,864,468),
- #     (set_startup_ambient_light,43,33,10),
- #     (set_startup_ground_ambient_light,80,70,50),
+      (set_fog_distance, 150, 0xffc0cb),
+      (set_skybox, 2, 2), 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_swamp_delta"),
-      (scene_set_day_time, 15),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 300, 0xFFa7a190),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,420,330,276),
-      (set_startup_ambient_light,68,78,62),
-      (set_startup_ground_ambient_light,80,70,50),
+   
+      (set_skybox, 50, 24),
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_polya"),
-      (scene_set_day_time, 15),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1400, 0xFF9a7533),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,414,358,196),
-      (set_startup_ambient_light,83,64,52),
-      (set_startup_ground_ambient_light,80,70,50),
+ 
+      (set_skybox, 4, 4),
+     (set_global_cloud_amount, 50),
+     (set_global_haze_amount, 50),
+    
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hillroad"),
-#      (scene_set_day_time, 10),
-#      (set_skybox, 5,6), #skybox_cloud_1
-#	  (set_rain, 1,100),
-#      (set_fog_distance, 500, 0xFF947f54),
-#      (set_fixed_point_multiplier,255),
-#      (set_startup_sun_light,312,272,108),
-#      (set_startup_ambient_light,146,119,90),
-#      (set_startup_ground_ambient_light,80,70,50),
+    (set_skybox, 20, 46),
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_hutor"),
-      (scene_set_day_time, 7),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1400, 0xFF978d78),
-      (set_fixed_point_multiplier,250),
-      (set_startup_sun_light,432,322,150),
-      (set_startup_ambient_light,58,49,37),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 6, 6), #skybox_cloud_1
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_marketplace"),
-      (scene_set_day_time, 11),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1800, 0xFF967049),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,256,196,102),
-      (set_startup_ambient_light,30,25,32),
-      (set_startup_ground_ambient_light,80,70,50),
+     
+   (set_skybox, 7, 7),
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_forest_edge"),
-      (scene_set_day_time, 13),
-      (set_skybox, 8, 9), #skybox_cloud_1
-      (set_fog_distance, 1300, 0xFFafaf95),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,320,228,136),
-      (set_startup_ambient_light,77,54,12),
-      (set_startup_ground_ambient_light,80,70,50),
+      
+      (set_skybox, 24, 53),
+ 
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_forest_road"),
-      (scene_set_day_time, 10),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 1000, 0xa88848),
-      (set_fixed_point_multiplier,200),
-      (set_startup_sun_light,620,440,240),
-      (set_startup_ambient_light,58,76,101),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 9, 9),
+  
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_river_village"),
-      (scene_set_day_time, 10),
-      (set_skybox, 6, 7), #skybox_cloud_1
-      (set_fog_distance, 700, 0xFF969866),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,564,470,396),
-      (set_startup_ambient_light,45,60,53),
-      (set_startup_ground_ambient_light,80,70,50),
+  
+      (set_skybox, 10, 10), 
+     
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_nomad_camp"),
-      (scene_set_day_time, 15),
-      (set_skybox, 14,15), #skybox_cloud_1
-      (set_fog_distance, 250, 0xFF928054),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,412,328,188),
-      (set_startup_ambient_light,62,37,12),
-      (set_startup_ground_ambient_light,80,70,50),
+
+      (set_skybox, 11,11), #skybox_cloud_1
+
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_swed_zamok"),
-      (scene_set_day_time, 15),
-      (set_skybox, 10, 11), #skybox_cloud_1
-      (set_fog_distance, 170, 0xFFaa9c86),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,48,56,40),
-      (set_startup_ambient_light,31,31,31),
-      (set_startup_ground_ambient_light,80,70,50),
+ 
+      (set_skybox, 12, 12), #skybox_cloud_1
+     
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_novgorod_fortress"),
       (scene_set_day_time, 15),
       (set_skybox, 10, 11), #skybox_cloud_1
       (set_fog_distance, 1400, 0xFF92774a),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,272,180,124),
-      (set_startup_ambient_light,23,14,0),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_rus_fortress"),
       (scene_set_day_time, 15),
       (set_skybox, 8, 9), #skybox_cloud_1
       (set_fog_distance, 1200, 0xFF867361),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,628,548,428),
-      (set_startup_ambient_light,88,66,41),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_mosk_monastyr"),
       (scene_set_day_time, 15),
       (set_skybox, 10, 11), #skybox_cloud_1
-      (set_fog_distance, 1200, 0xFF46371b),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,624,544,328),
-      (set_startup_ambient_light,29,33,41),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_new_1"),
       (scene_set_day_time, 15),
       (set_skybox, 8, 9), #skybox_cloud_1
       (set_fog_distance, 800, 0xFF9a8f5e),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,372,272,84),
-      (set_startup_ambient_light,49,45,34),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	(else_try),
 	  (eq, ":cur_scene", "scn_mp_new_2"),
       (scene_set_day_time, 17),
       (set_skybox, 8, 9), #skybox_cloud_1
       (set_fog_distance, 1200, 0xFFaf9067),
-      (set_fixed_point_multiplier,255),
-      (set_startup_sun_light,460,304,56),
-      (set_startup_ambient_light,29,25,10),
-      (set_startup_ground_ambient_light,80,70,50),
+
 	  
 	  
 	  
@@ -7862,6 +7843,8 @@ mission_templates = [
 
       multiplayer_server_check_polls,
 	  multiplayer_set_map_weather,
+    helmet_visors,
+    whistle_horse,
 	  
         (ti_server_player_joined, 0, 0, [],
         [(multiplayer_is_server),
@@ -7872,13 +7855,63 @@ mission_templates = [
         ]),
 		
 		(ti_on_player_exit, 0, 0, [],
-		[(multiplayer_is_server),
-		(store_trigger_param_1, ":exiting_player_no"),
+		[
+   
+   (multiplayer_is_server),
+   (store_trigger_param_1, ":exiting_player_no"),
+     (player_get_troop_id, ":player_troop_id", ":exiting_player_no"),
+
 		(player_set_slot, ":exiting_player_no", slot_player_data_was_loaded, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_game_points, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_round_points, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_round_kills, 0),
 		(player_set_slot, ":exiting_player_no", slot_player_this_round_deaths, 0),
+
+   (try_begin),
+  (store_proficiency_level, reg10, ":player_troop_id", wpt_one_handed_weapon),
+  (store_proficiency_level, reg11, ":player_troop_id", wpt_two_handed_weapon), 
+   (store_proficiency_level, reg12, ":player_troop_id", wpt_polearm), 
+   (store_proficiency_level, reg13, ":player_troop_id", wpt_archery), 
+   (store_proficiency_level, reg14, ":player_troop_id", wpt_throwing), 
+   (store_proficiency_level, reg15, ":player_troop_id", wpt_crossbow), 
+  (store_proficiency_level, reg16, ":player_troop_id", wpt_firearm), 
+
+
+(store_attribute_level, reg8, ":player_troop_id", ca_strength),
+(store_attribute_level, reg9, ":player_troop_id", ca_agility),
+
+ (store_skill_level, reg20, skl_ironflesh, ":player_troop_id"),
+  (store_skill_level, reg21, skl_power_strike, ":player_troop_id"),
+   (store_skill_level, reg22, skl_power_throw, ":player_troop_id"),
+    (store_skill_level, reg23, skl_power_draw, ":player_troop_id"),
+     (store_skill_level, reg24, skl_shield, ":player_troop_id"),
+      (store_skill_level, reg25, skl_athletics, ":player_troop_id"),
+       (store_skill_level, reg26, skl_riding, ":player_troop_id"),
+         (store_skill_level, reg27, skl_horse_archery, ":player_troop_id"),
+
+    	(troop_raise_skill, ":player_troop_id", skl_ironflesh, -reg20),
+			(troop_raise_skill, ":player_troop_id", skl_power_strike, -reg21),
+			(troop_raise_skill, ":player_troop_id", skl_power_throw, -reg22),
+			(troop_raise_skill, ":player_troop_id", skl_power_draw, -reg23),
+  
+			(troop_raise_skill, ":player_troop_id", skl_shield, -reg24),
+			(troop_raise_skill, ":player_troop_id", skl_athletics, -reg25),
+			(troop_raise_skill, ":player_troop_id", skl_riding, -reg26),
+      			(troop_raise_skill, ":player_troop_id", skl_horse_archery, -reg27),
+			
+			(troop_raise_proficiency, ":player_troop_id", wpt_one_handed_weapon, -reg10),
+			(troop_raise_proficiency, ":player_troop_id", wpt_two_handed_weapon, -reg11),
+			(troop_raise_proficiency, ":player_troop_id", wpt_polearm, -reg12),
+			(troop_raise_proficiency, ":player_troop_id", wpt_archery, -reg13),
+			(troop_raise_proficiency, ":player_troop_id", wpt_throwing, -reg14),  
+      (troop_raise_proficiency, ":player_troop_id", wpt_crossbow, -reg15),
+      (troop_raise_proficiency, ":player_troop_id", wpt_firearm, -reg16),
+
+      			(troop_raise_attribute, ":player_troop_id", ca_strength, -reg8),
+			(troop_raise_attribute, ":player_troop_id", ca_agility, -reg19),
+(try_end),
+
+
 		#reset the troop here aswell
 		#get value of the skill/profencie
 		#then just minus raise the skill/profencie with the value you got
@@ -7996,7 +8029,41 @@ mission_templates = [
          (store_trigger_param_1, ":dead_agent_no"),
          (store_trigger_param_2, ":killer_agent_no"),
 
+	 #Illuminati
+		 (try_begin),
+
+			(gt, ":killer_agent_no", 0),
+      		(gt, ":dead_agent_no", 0),
+			(agent_get_player_id, ":killer_player_id", ":killer_agent_no"),
+      		(agent_get_player_id, ":dead_player_id", ":dead_agent_no"),
+			(player_is_active, ":killer_player_id"),
+      		(player_is_active, ":dead_player_id"),
+			(gt, ":killer_player_id", 0),
+      	(gt, ":dead_player_id", 0),
+        (agent_get_wielded_item, ":weapon_id", ":killer_agent_no"),
+			 (call_script, "script_cf_pitch_multiplayer_player_killed_data", ":killer_player_id", ":dead_player_id", ":weapon_id"),
+		 (try_end),
 		 #Illuminati
+
+     
+		 #Illuminati dead
+		 (try_begin),
+			(gt, ":dead_agent_no", 0),
+			(agent_get_player_id, ":player_id", ":dead_agent_no"),
+			(player_is_active, ":player_id"),
+			(gt, ":player_id", 0),
+			(player_get_slot, ":this_round_points", ":player_id", slot_player_this_round_points),
+			(val_add, ":this_round_points", 1),
+			(player_set_slot, ":player_id", slot_player_this_round_points, ":this_round_points"),
+			(player_get_slot, ":this_round_kills", ":player_id", slot_player_this_round_deaths),
+			(val_add, ":this_round_kills", 1),
+			(player_set_slot, ":player_id", slot_player_this_round_deaths, ":this_round_kills"),
+			#Important: increase value if killed boss, normal player or agent is just 1
+		 (try_end),
+		 #Illuminati
+
+
+		 #Illuminati 
 		 (try_begin),
 			(gt, ":killer_agent_no", 0),
 			(agent_get_player_id, ":player_id", ":killer_agent_no"),
@@ -8124,6 +8191,56 @@ mission_templates = [
          (call_script, "script_multiplayer_event_mission_end"),
          (assign, "$g_multiplayer_stats_chart_opened_manually", 0),
          (start_presentation, "prsnt_multiplayer_stats_chart"),
+
+ (get_max_players, ":num_players"), 
+         (try_for_range, ":player_no", 1, ":num_players"), #0 is server so starting from 1
+           (player_is_active, ":player_no"),
+              (player_get_troop_id, ":player_troop_id", ":player_no"),
+  (store_proficiency_level, reg10, ":player_troop_id", wpt_one_handed_weapon),
+  (store_proficiency_level, reg11, ":player_troop_id", wpt_two_handed_weapon), 
+   (store_proficiency_level, reg12, ":player_troop_id", wpt_polearm), 
+   (store_proficiency_level, reg13, ":player_troop_id", wpt_archery), 
+   (store_proficiency_level, reg14, ":player_troop_id", wpt_throwing), 
+   (store_proficiency_level, reg15, ":player_troop_id", wpt_crossbow), 
+  (store_proficiency_level, reg16, ":player_troop_id", wpt_firearm), 
+
+
+(store_attribute_level, reg8, ":player_troop_id", ca_strength),
+(store_attribute_level, reg9, ":player_troop_id", ca_agility),
+
+ (store_skill_level, reg20, skl_ironflesh, ":player_troop_id"),
+  (store_skill_level, reg21, skl_power_strike, ":player_troop_id"),
+   (store_skill_level, reg22, skl_power_throw, ":player_troop_id"),
+    (store_skill_level, reg23, skl_power_draw, ":player_troop_id"),
+     (store_skill_level, reg24, skl_shield, ":player_troop_id"),
+      (store_skill_level, reg25, skl_athletics, ":player_troop_id"),
+       (store_skill_level, reg26, skl_riding, ":player_troop_id"),
+         (store_skill_level, reg27, skl_horse_archery, ":player_troop_id"),
+
+    	(troop_raise_skill, ":player_troop_id", skl_ironflesh, -reg20),
+			(troop_raise_skill, ":player_troop_id", skl_power_strike, -reg21),
+			(troop_raise_skill, ":player_troop_id", skl_power_throw, -reg22),
+			(troop_raise_skill, ":player_troop_id", skl_power_draw, -reg23),
+  
+			(troop_raise_skill, ":player_troop_id", skl_shield, -reg24),
+			(troop_raise_skill, ":player_troop_id", skl_athletics, -reg25),
+			(troop_raise_skill, ":player_troop_id", skl_riding, -reg26),
+      			(troop_raise_skill, ":player_troop_id", skl_horse_archery, -reg27),
+			
+			(troop_raise_proficiency, ":player_troop_id", wpt_one_handed_weapon, -reg10),
+			(troop_raise_proficiency, ":player_troop_id", wpt_two_handed_weapon, -reg11),
+			(troop_raise_proficiency, ":player_troop_id", wpt_polearm, -reg12),
+			(troop_raise_proficiency, ":player_troop_id", wpt_archery, -reg13),
+			(troop_raise_proficiency, ":player_troop_id", wpt_throwing, -reg14),  
+      (troop_raise_proficiency, ":player_troop_id", wpt_crossbow, -reg15),
+      (troop_raise_proficiency, ":player_troop_id", wpt_firearm, -reg16),
+
+      			(troop_raise_attribute, ":player_troop_id", ca_strength, -reg8),
+			(troop_raise_attribute, ":player_troop_id", ca_agility, -reg19),
+(try_end),
+
+
+         
          ]),
       
       (1, 0, 0, [(multiplayer_is_server), 

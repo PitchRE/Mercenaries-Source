@@ -27,13 +27,15 @@ python process_simple_triggers.py
 python process_dialogs.py
 python process_global_variables_unused.py
 python process_postfx.py
+python Skyboxes.py
 rm *.pyc
 
 
 cd '/home/pitch/Desktop/Mercenaries Project/MS/compiled'
-cp *.txt '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Mercenaries/'
-cp *.txt '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries/'
-clear
+cp -a * '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries/'
+#cp -rf '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries' '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules'
+rsync -r -u '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries' '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules'
+rsync -r -u  '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries' '/home/pitch/.wine/drive_c/Program Files (x86)/Mount&Blade With Fire and Sword/Modules'
 echo Updated Server Files.
 echo Updated Client Files.
 echo Compiling was successful!

@@ -160,6 +160,8 @@ multiplayer_event_pass_troop_data = 127
 multiplayer_event_send_updated_troop_prof = 120
 multiplayer_event_send_updated_troop_attribute = 121
 multiplayer_event_send_updated_troop_skill = 122
+multiplayer_event_data_client                           = 123
+multiplayer_event_data_server                         = 124
 #Illuminati
 
 #multiplayer message types
@@ -341,6 +343,8 @@ multiplayer_spawn_above_opt_enemy_dist_point = 32 #while finding most suitable s
 multiplayer_spawn_min_enemy_dist_limit = 45 #while finding most suitable spawn point if nearest enemy is closer than 45 meters give negative points to that spawn point, (squared increase)
 
 multiplayer_poll_disable_period = 900 #15 minutes
+
+multiplayer_reload_disable_period = 300
 
 #OiM 
 multi_distance_to_captain_spaw_point = 15*100
