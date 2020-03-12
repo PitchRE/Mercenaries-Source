@@ -344,6 +344,8 @@ multiplayer_spawn_min_enemy_dist_limit = 45 #while finding most suitable spawn p
 
 multiplayer_poll_disable_period = 900 #15 minutes
 
+multiplayer_reload_disable_period = 300
+
 #OiM 
 multi_distance_to_captain_spaw_point = 15*100
 multi_killer_captain_add = 60

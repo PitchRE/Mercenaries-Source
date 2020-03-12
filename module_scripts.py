@@ -7634,7 +7634,7 @@ scripts = [
     	(assign, ":player_troop_id", "trp_player_troop_start"),
 			(val_add, ":player_troop_id", ":player_id"),
 			(assign, reg55, ":player_troop_id"),
-			(display_message, "@DEBUG: Did give player {reg1} following troop: {reg55}"),
+		#	(display_message, "@DEBUG: Did give player {reg1} following troop: {reg55}"),
 			
 
 
@@ -7691,7 +7691,7 @@ scripts = [
 
 
      (str_store_player_username, s30, ":player_id"),
-     (display_message, "@ Gave player {s30} firearm skill {reg31} and crossbow {reg22}"),
+
 
           
 
@@ -8482,7 +8482,70 @@ scripts = [
 (eq, ":is_whistled", 0),
 (agent_set_scripted_destination,":agent",pos1,1),
   (assign, ":is_whistled", 1),
-	(try_end),	
+	(try_end),
+  (else_try),
+    (eq, ":event_type_custom", 3),
+
+(player_get_agent_id, ":player_agent", ":player_no"),
+(remove_agent, ":player_agent"),
+  
+    (player_get_troop_id, ":player_troop_id", ":player_no"),
+
+
+
+   (try_begin),
+
+   		(player_set_slot, ":player_no", slot_player_data_was_loaded, 0),
+		(player_set_slot, ":player_no", slot_player_this_game_points, 0),
+		(player_set_slot, ":player_no", slot_player_this_round_points, 0),
+		(player_set_slot, ":player_no", slot_player_this_round_kills, 0),
+		(player_set_slot, ":player_no", slot_player_this_round_deaths, 0),
+
+
+  (store_proficiency_level, reg10, ":player_troop_id", wpt_one_handed_weapon),
+  (store_proficiency_level, reg11, ":player_troop_id", wpt_two_handed_weapon), 
+   (store_proficiency_level, reg12, ":player_troop_id", wpt_polearm), 
+   (store_proficiency_level, reg13, ":player_troop_id", wpt_archery), 
+   (store_proficiency_level, reg14, ":player_troop_id", wpt_throwing), 
+   (store_proficiency_level, reg15, ":player_troop_id", wpt_crossbow), 
+  (store_proficiency_level, reg16, ":player_troop_id", wpt_firearm), 
+
+
+(store_attribute_level, reg8, ":player_troop_id", ca_strength),
+(store_attribute_level, reg9, ":player_troop_id", ca_agility),
+
+ (store_skill_level, reg20, skl_ironflesh, ":player_troop_id"),
+  (store_skill_level, reg21, skl_power_strike, ":player_troop_id"),
+   (store_skill_level, reg22, skl_power_throw, ":player_troop_id"),
+    (store_skill_level, reg23, skl_power_draw, ":player_troop_id"),
+     (store_skill_level, reg24, skl_shield, ":player_troop_id"),
+      (store_skill_level, reg25, skl_athletics, ":player_troop_id"),
+       (store_skill_level, reg26, skl_riding, ":player_troop_id"),
+         (store_skill_level, reg27, skl_horse_archery, ":player_troop_id"),
+
+    	(troop_raise_skill, ":player_troop_id", skl_ironflesh, -reg20),
+			(troop_raise_skill, ":player_troop_id", skl_power_strike, -reg21),
+			(troop_raise_skill, ":player_troop_id", skl_power_throw, -reg22),
+			(troop_raise_skill, ":player_troop_id", skl_power_draw, -reg23),
+  
+			(troop_raise_skill, ":player_troop_id", skl_shield, -reg24),
+			(troop_raise_skill, ":player_troop_id", skl_athletics, -reg25),
+			(troop_raise_skill, ":player_troop_id", skl_riding, -reg26),
+      			(troop_raise_skill, ":player_troop_id", skl_horse_archery, -reg27),
+			
+			(troop_raise_proficiency, ":player_troop_id", wpt_one_handed_weapon, -reg10),
+			(troop_raise_proficiency, ":player_troop_id", wpt_two_handed_weapon, -reg11),
+			(troop_raise_proficiency, ":player_troop_id", wpt_polearm, -reg12),
+			(troop_raise_proficiency, ":player_troop_id", wpt_archery, -reg13),
+			(troop_raise_proficiency, ":player_troop_id", wpt_throwing, -reg14),  
+      (troop_raise_proficiency, ":player_troop_id", wpt_crossbow, -reg15),
+      (troop_raise_proficiency, ":player_troop_id", wpt_firearm, -reg16),
+
+      			(troop_raise_attribute, ":player_troop_id", ca_strength, -reg8),
+			(troop_raise_attribute, ":player_troop_id", ca_agility, -reg19),
+(try_end),
+
+     (call_script, "script_illu_multiplayer_player_joined", ":player_no"),
     (try_end),
 
 

@@ -60,7 +60,7 @@ oim_duel_equip_alevtina_hanum = [itm_tatar_halat_b, itm_tatar_bayrak_hat, itm_sa
 
 
 helmet_visors = ( #decide what equipment the troops get
- 0, 0, 0, [(key_clicked, key_q)], 
+ 0, 0, 5, [(key_clicked, key_q)], 
  [
    (store_trigger_param_1, ":agent_id"),
    (multiplayer_get_my_player, ":player"), # Get player info
@@ -83,7 +83,7 @@ helmet_visors = ( #decide what equipment the troops get
 
 
 whistle_horse = ( #decide what equipment the troops get
- 0, 0, 0, [(key_clicked, key_c)], 
+ 0, 0, 60, [(key_clicked, key_c)], 
  [
 
    (multiplayer_get_my_player, ":player"), # Get player info
@@ -8045,8 +8045,25 @@ mission_templates = [
 		 (try_end),
 		 #Illuminati
 
-
+     
+		 #Illuminati dead
+		 (try_begin),
+			(gt, ":dead_agent_no", 0),
+			(agent_get_player_id, ":player_id", ":dead_agent_no"),
+			(player_is_active, ":player_id"),
+			(gt, ":player_id", 0),
+			(player_get_slot, ":this_round_points", ":player_id", slot_player_this_round_points),
+			(val_add, ":this_round_points", 1),
+			(player_set_slot, ":player_id", slot_player_this_round_points, ":this_round_points"),
+			(player_get_slot, ":this_round_kills", ":player_id", slot_player_this_round_deaths),
+			(val_add, ":this_round_kills", 1),
+			(player_set_slot, ":player_id", slot_player_this_round_deaths, ":this_round_kills"),
+			#Important: increase value if killed boss, normal player or agent is just 1
+		 (try_end),
 		 #Illuminati
+
+
+		 #Illuminati 
 		 (try_begin),
 			(gt, ":killer_agent_no", 0),
 			(agent_get_player_id, ":player_id", ":killer_agent_no"),
