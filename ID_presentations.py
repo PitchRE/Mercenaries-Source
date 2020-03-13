@@ -40,3 +40,6 @@ prsnt_multiplayer_duel_start_counter = 38
 prsnt_tw_show_mouse_movement = 39
 prsnt_multiplayer_flag_projection_display_ccoop = 40
 prsnt_multiplayer_flag_projection_display_ccoop_wave = 41
+prsnt_whistle = 42
+prsnt_warcry = 43
+prsnt_stronger_effect = 44

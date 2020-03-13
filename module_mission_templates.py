@@ -7,6 +7,7 @@ from header_music import *
 from header_items import *
 from module_constants import *
 from header_skills import *
+from ID_sounds import *
 
 ####################################################################################################################
 #   Each mission-template is a tuple that contains the following fields:
@@ -82,17 +83,113 @@ helmet_visors = ( #decide what equipment the troops get
  ])
 
 
-whistle_horse = ( #decide what equipment the troops get
- 0, 0, 60, [(key_clicked, key_c)], 
+whistle_horse = ( 
+ 0, 0, 0, [(key_clicked, key_c)], 
  [
-
+   (eq, "$g_whistle_cooldown", 0),
    (multiplayer_get_my_player, ":player"), # Get player info
   (player_get_agent_id, ":agent_id", ":player"),
+       (gt, ":agent_id", -1),
+       (agent_is_alive, ":agent_id"),
  (call_script, "script_whistle_horse", ":player", ":agent_id"),#Use script to change helmet
  	(display_message,"@You whistle for a horse!",0x6495ed),	
-
+   (assign, "$g_whistle_cooldown", 15),
  ])
 
+warcry = ( 
+ 0, 0, 0, [(key_clicked, key_v)], 
+ [
+   (eq, "$g_warcry_cooldown", 0),
+    (multiplayer_get_my_player, ":player"), # Get player info
+  (player_get_agent_id, ":agent_id", ":player"),
+       (gt, ":agent_id", -1),
+            (agent_is_alive, ":agent_id"),
+ 	(display_message,"@You activated warcry!",0x6495ed),	
+   (multiplayer_send_2_int_to_server, multiplayer_event_data_server, 4, ":player"),
+      (assign, "$g_warcry_active_time", warcry_active_time),
+   (assign, "$g_warcry_cooldown", warcry_cooldown),
+ ])
+
+
+prsnt_refresh_rate = (
+  1, 0, 0, [],
+  [
+  
+    (start_presentation, "prsnt_whistle"),  
+    (start_presentation, "prsnt_warcry"),
+    (start_presentation, "prsnt_stronger_effect"),
+ ])
+
+
+
+exhaustion_effect = (
+  1, 0, 0, [],    ### timer must be 1, 0, 0, for properly working cooldown
+ [  
+
+   (try_begin),
+  (assign, ":value", "$g_whistle_cooldown"),
+  (gt, ":value", 0),
+  (val_sub, ":value", 1),
+  (assign, "$g_whistle_cooldown", ":value"),   
+  (try_end),
+
+     (try_begin),
+  (assign, ":value", "$g_warcry_active_time"),
+  (gt, ":value", 0),
+  (val_sub, ":value", 1),
+  (assign, "$g_warcry_active_time", ":value"),   
+  (try_end),
+
+
+   (try_begin),
+  (assign, ":value", "$g_warcry_cooldown"),
+  (gt, ":value", 0),
+  (val_sub, ":value", 1),
+  (assign, "$g_warcry_cooldown", ":value"),   
+  (try_end),
+  ])
+
+
+check_player_skills = (
+  1, 0, 0, [(multiplayer_is_server)],    ### timer must be 1, 0, 0, for properly working cooldown
+ [
+   (get_max_players, ":num_players"), 
+   
+         (try_for_range, ":player_no", 1, ":num_players"), 
+           (player_is_active, ":player_no"),
+
+           (try_begin), ### warcry cooldown begin
+           (player_get_slot, reg5,  ":player_no", slot_player_warcry_cooldown),
+           (gt, reg5, 0),
+           (val_sub, reg5, 1),
+           (player_set_slot, ":player_no", slot_player_warcry_cooldown, reg5),
+           (try_end), ## warcry end
+
+           (try_begin), # warcry active for begin
+             (player_get_slot, ":warcry_active_time",  ":player_no", slot_player_warcry_active_time),
+             (gt, ":warcry_active_time", 0),
+             (val_sub, ":warcry_active_time", 1),
+             (player_set_slot, ":player_no", slot_player_warcry_active_time, ":warcry_active_time"),
+              (assign, reg50, ":warcry_active_time"),
+             (try_end),
+
+
+
+             (try_begin),
+             (player_get_slot, ":warcry_active_time",  ":player_no", slot_player_warcry_active_time),
+             (eq, ":warcry_active_time", 0),
+             (player_get_agent_id, ":player_agent", ":player_no"),
+             (agent_is_active, ":player_agent"),
+             (agent_set_damage_modifier, ":player_agent", 100),
+           
+             (try_end),
+
+
+
+
+
+   (try_end),
+  ])
 
 
 
@@ -7845,6 +7942,10 @@ mission_templates = [
 	  multiplayer_set_map_weather,
     helmet_visors,
     whistle_horse,
+    prsnt_refresh_rate,
+    exhaustion_effect,
+    warcry,
+    check_player_skills,
 	  
         (ti_server_player_joined, 0, 0, [],
         [(multiplayer_is_server),
@@ -8155,6 +8256,7 @@ mission_templates = [
 			   (try_for_range, ":cur_player", 0, ":max_players"),
 					(player_is_active, ":cur_player"),
 					(call_script, "script_cf_illu_multiplayer_player_give_round_earning", ":cur_player"),
+          (play_sound, snd_money_received),
 			   (try_end),
 			   #Illuminati
 			 
