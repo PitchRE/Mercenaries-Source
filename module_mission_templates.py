@@ -93,7 +93,7 @@ whistle_horse = (
        (agent_is_alive, ":agent_id"),
  (call_script, "script_whistle_horse", ":player", ":agent_id"),#Use script to change helmet
  	(display_message,"@You whistle for a horse!",0x6495ed),	
-   (assign, "$g_whistle_cooldown", 15),
+   (assign, "$g_whistle_cooldown", 25),
  ])
 
 warcry = ( 

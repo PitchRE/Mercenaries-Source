@@ -7815,7 +7815,8 @@ scripts = [
 				(str_store_string, s60, "@You did level up! You are level {reg4} now!^{reg5} EXP needed for new level!"),
      
 				(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_important_message, s60),
-          (play_sound, snd_quest_succeeded),
+
+       
 				(player_set_slot, ":player_id", slot_player_experience_to_next_level, reg5),
 				(player_set_slot, ":player_id", slot_player_level, reg4),
 				(player_set_slot, ":player_id", slot_player_experience, reg3),

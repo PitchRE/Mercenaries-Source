@@ -11819,9 +11819,30 @@ presentations = [
      (player_get_agent_id, ":agent_no", ":player_no"),
           (gt, ":agent_no", -1),
      (agent_is_alive, ":agent_no"),
-       (try_begin),
-      (eq, "$g_whistle_cooldown", 0),
-      (create_mesh_overlay, reg0, "mesh_skill_whistle"),
+
+
+     (assign, reg20, "$g_whistle_cooldown"),
+     (val_mul, reg20, 4),
+
+
+    (try_begin),
+    (eq, "$g_whistle_cooldown", 0),
+
+    (create_mesh_overlay, reg0, "mesh_skill_whistle"),
+    (else_try),
+    (is_between, reg20, 0, 25),
+    (create_mesh_overlay, reg0, "mesh_skill_whistle_75"),
+    (else_try),
+    (is_between, reg20, 25, 50),
+    (create_mesh_overlay, reg0, "mesh_skill_whistle_50"),
+    (else_try),
+    (is_between, reg20, 50, 75),
+     (create_mesh_overlay, reg0, "mesh_skill_whistle_25"),
+     (else_try),
+    (is_between, reg20, 75, 101),
+    (create_mesh_overlay, reg0, "mesh_skill_whistle_0"),
+    (try_end),
+
       (position_set_x, pos1, 920),
       (position_set_y, pos1, 350),
       (overlay_set_position, reg0, pos1),
@@ -11842,16 +11863,37 @@ presentations = [
      (player_get_agent_id, ":agent_no", ":player_no"),
           (gt, ":agent_no", -1),
      (agent_is_alive, ":agent_no"),
-       (try_begin),
-       (eq, "$g_warcry_cooldown", 0),
-      (create_mesh_overlay, reg0, "mesh_skill_warcry"),
+
+     
+     (assign, reg20, "$g_warcry_cooldown"),
+     (val_mul, reg20, 4),
+
+
+    (try_begin),
+    (eq, "$g_warcry_cooldown", 0),
+    (create_mesh_overlay, reg0, "mesh_skill_warcry"),
+    (else_try),
+    (is_between, reg20, 0, 25),
+    (create_mesh_overlay, reg0, "mesh_skill_warcry_75"),
+    (else_try),
+    (is_between, reg20, 25, 50),
+    (create_mesh_overlay, reg0, "mesh_skill_warcry_50"),
+    (else_try),
+    (is_between, reg20, 50, 75),
+     (create_mesh_overlay, reg0, "mesh_skill_warcry_25"),
+     (else_try),
+    (is_between, reg20, 75, 101),
+    (create_mesh_overlay, reg0, "mesh_skill_warcry_0"),
+    (try_end),
+
+      (try_end),
       (position_set_x, pos1, 895),
       (position_set_y, pos1, 310),
       (overlay_set_position, reg0, pos1),
       (position_set_x, pos2, 30),
       (position_set_y, pos2, 50),
       (overlay_set_size, reg0, pos2),
-      (try_end),
+      
      
       (presentation_set_duration, 9999999),
       ]),
@@ -11903,6 +11945,7 @@ presentations = [
      (agent_is_alive, ":agent_no"),
      (assign, reg10, "$g_warcry_active_time"),
      (eq, "$g_effect_heavy_armor", 1),
+
 
       (try_begin),
       (create_mesh_overlay, reg0, "mesh_effect_heavy_armor"),
