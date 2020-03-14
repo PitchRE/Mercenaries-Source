@@ -2627,43 +2627,43 @@ items = [
 
 
 ["visored_salet_coif", "visored_salet_coif", [("visored_salet_coif",0)], itp_merchandise| itp_type_head_armor   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(62)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["visored_salet", "visored_salet", [("visored_salet",0)], itp_merchandise| itp_type_head_armor   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(58)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["byzantion", "byzantion", [("byzantion",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["open_salet", "open_salet", [("open_salet",0)], itp_merchandise|itp_type_head_armor   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(30)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["frenchpepperpot", "French Pepperpot", [("frenchpepperpot",0)], itp_merchandise|itp_covers_beard|itp_type_head_armor   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(42)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["greathelm1", "Great Helmet", [("greathelm1",0)], itp_merchandise| itp_type_head_armor|itp_covers_head   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(65)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["kettlehatfacebyrnie", "kettlehatfacebyrnie", [("kettlehatfacebyrnie",0)], itp_merchandise|itp_covers_beard|itp_type_head_armor   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["bolzanobucket", "bolzanobucket", [("bolzanobucket",0)], itp_merchandise| itp_type_head_armor|itp_covers_head   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(60)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["normanpepperpot", "Norman Pepperpot", [("normanpepperpot",0)], itp_merchandise| itp_type_head_armor|itp_covers_beard   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["greathelmwhat", "Great Helmet", [("greathelmwhat",0)], itp_merchandise| itp_type_head_armor|itp_covers_head   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(64)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["col1_kettlehat2", "col1_kettlehat2", [("col1_kettlehat2",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(48)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["fullfacecoif", "fullfacecoif", [("fullfacecoif",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(25)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["weimarhelm", "Weimar Helmet", [("weimarhelm",0)], itp_merchandise| itp_type_head_armor|itp_covers_head   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(65)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 
 ["open_salet_coif", "open_salet_coif", [("open_salet_coif",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
@@ -2671,7 +2671,7 @@ items = [
 
 
 ["crownedhelm", "crownedhelm", [("crownedhelm",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["frenchpepperpot2", "French Pepperpot", [("frenchpepperpot2",0)], itp_merchandise| itp_type_head_armor|itp_covers_beard   ,0,
  6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],

@@ -43,3 +43,4 @@ prsnt_multiplayer_flag_projection_display_ccoop_wave = 41
 prsnt_whistle = 42
 prsnt_warcry = 43
 prsnt_stronger_effect = 44
+prsnt_heavy_armor_effect = 45

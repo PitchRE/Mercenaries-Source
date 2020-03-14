@@ -5,7 +5,14 @@ from header_items_fake import *
 import json
 
 
+import mysql.connector
 
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  passwd="Mania211##",
+  database="Mercenaries"
+)
 
 
 def item_type(x):
@@ -135,6 +142,12 @@ for item_img in filenames:
                "shoot_speed": get_missile_speed(item[6]),
                "weight": get_weight(item[6]),    
            }
+           mycursor = mydb.cursor()
+           if item_type(item[3]) == "itp_type_body_armor":
+               mycursor.execute("UPDATE items SET defence = %s WHERE code_name = %s orWhere code_name = %s orWhere code_name = %s", (get_body_armor(item[6]), item[0], item[2][0][1], item[2][0][0]))
+           elif item_type(item[3]) == itp_type_head_armor:
+               mycursor.execute("UPDATE items SET defence = %s WHERE code_name = %s", (get_head_armor(item[6]), item[0]))
+           mydb.commit()
            exists = 1
     if exists == 0 :
         to_add.append(item_img)

@@ -545,5 +545,6 @@ mesh_skill_whistle = 543
 mesh_skill_arrow_to_the_knee = 544
 mesh_skill_warcry = 545
 mesh_effect_stronger = 546
+mesh_effect_heavy_armor = 547
 
 

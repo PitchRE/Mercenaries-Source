@@ -600,4 +600,5 @@ meshes = [
      ("skill_arrow_to_the_knee", 0, "skill_arrow_to_the_knee", 0, 0, 0, 0, 0, 0, 1, 1, 1),
        ("skill_warcry", 0, "skill_warcry", 0, 0, 0, 0, 0, 0, 1, 1, 1),
          ("effect_stronger", 0, "effect_stronger", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+            ("effect_heavy_armor", 0, "effect_heavy_armor", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

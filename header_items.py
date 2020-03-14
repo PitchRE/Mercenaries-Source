@@ -32,26 +32,26 @@ itp_type_animal          = 0x0000000000000013
 itp_type_book            = 0x0000000000000014
 
 
-# itp_type_horse           = -1
-# itp_type_one_handed_wpn  = -2
-# itp_type_two_handed_wpn  = -3
-# itp_type_polearm = -4
-# itp_type_arrows          = -5
-# itp_type_bolts           = -6
-# itp_type_shield          = -7
-# itp_type_bow             = -8
-# itp_type_crossbow        = -9
-# itp_type_thrown          = -10
-# itp_type_goods           = -11
-# itp_type_head_armor      = -12
-# itp_type_body_armor      = -13
-# itp_type_foot_armor      = -14
-# itp_type_hand_armor      = -15
-# itp_type_pistol          = -16
-# itp_type_musket          = -17
-# itp_type_bullets         = -18
-# itp_type_animal          = -19
-# itp_type_book            = -20
+itp_type_horse           = -1
+itp_type_one_handed_wpn  = -2
+itp_type_two_handed_wpn  = -3
+itp_type_polearm = -4
+itp_type_arrows          = -5
+itp_type_bolts           = -6
+itp_type_shield          = -7
+itp_type_bow             = -8
+itp_type_crossbow        = -9
+itp_type_thrown          = -10
+itp_type_goods           = -11
+itp_type_head_armor      = -12
+itp_type_body_armor      = -13
+itp_type_foot_armor      = -14
+itp_type_hand_armor      = -15
+itp_type_pistol          = -16
+itp_type_musket          = -17
+itp_type_bullets         = -18
+itp_type_animal          = -19
+itp_type_book            = -20
 
 
 

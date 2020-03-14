@@ -118,6 +118,8 @@ prsnt_refresh_rate = (
     (start_presentation, "prsnt_whistle"),  
     (start_presentation, "prsnt_warcry"),
     (start_presentation, "prsnt_stronger_effect"),
+    (start_presentation, "prsnt_heavy_armor_effect"),
+ 
  ])
 
 

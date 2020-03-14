@@ -7665,6 +7665,8 @@ scripts = [
      (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_crossbow, reg31),
      (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_firearm, reg31),
 
+     (multiplayer_send_2_int_to_player, ":player_id", multiplayer_event_data_client, 2, reg32),
+
 			(troop_raise_attribute, ":player_troop_id", ca_strength, reg16),
 			(troop_raise_attribute, ":player_troop_id", ca_agility, reg17),
 			
@@ -9360,13 +9362,15 @@ scripts = [
                      
             ### HELMET VISOR SCRIPT BEGIN #####
           
-      (try_begin),
+      (try_begin), 
       (eq, ":event_type_custom", 1),
       (assign, reg40, ":value_1"),
         (assign, reg41, ":value_2"),
-      (display_message, "@ agent id {reg40}, weapon {reg41}"),
       (agent_equip_item, ":value_1", ":value_2"), 
         (agent_play_sound, ":value_1", 99),
+        (else_try), #  heavy armor effect
+           (eq, ":event_type_custom", 2),
+              (assign, "$g_effect_heavy_armor", ":value_1"),
       (try_end),
                     
             ### HELMET VISOR SCRIPT END ####

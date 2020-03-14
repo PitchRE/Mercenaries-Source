@@ -11893,4 +11893,29 @@ presentations = [
     ]),
 
 
+      ("heavy_armor_effect", prsntf_read_only|prsntf_manual_end_only, 0, [
+    (ti_on_presentation_load,
+     [(set_fixed_point_multiplier, 1000),
+     (multiplayer_get_my_player, ":player_no"),
+     (player_is_active, ":player_no"),
+     (player_get_agent_id, ":agent_no", ":player_no"),
+     (gt, ":agent_no", -1),
+     (agent_is_alive, ":agent_no"),
+     (assign, reg10, "$g_warcry_active_time"),
+     (eq, "$g_effect_heavy_armor", 1),
+
+      (try_begin),
+      (create_mesh_overlay, reg0, "mesh_effect_heavy_armor"),
+      (position_set_x, pos1, 960),
+      (position_set_y, pos1, 35),
+      (overlay_set_position, reg0, pos1),
+      (position_set_x, pos2, 20),
+      (position_set_y, pos2, 20),
+      (overlay_set_size, reg0, pos2),
+       (presentation_set_duration, 9999999),
+      (try_end),
+      ]),
+    ]),
+
+
   ]
