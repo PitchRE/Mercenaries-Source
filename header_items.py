@@ -172,6 +172,7 @@ iwf_accuracy_bits           = 16  #reuse leg_armor for accuracy
 iwf_damage_type_bits = 8
 
 
+
 def weight(x):
   a = int(4.0 * x)
   a = ibf_armor_mask & a

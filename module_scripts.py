@@ -9372,6 +9372,8 @@ scripts = [
         (else_try), #  heavy armor effect
            (eq, ":event_type_custom", 2),
               (assign, "$g_effect_heavy_armor", ":value_1"),
+              (assign, reg50, ":value_1"),
+              (display_message, "@ val {reg50}"),
       (try_end),
                     
             ### HELMET VISOR SCRIPT END ####

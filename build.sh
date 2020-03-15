@@ -36,6 +36,8 @@ cp -a * '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries/'
 #cp -rf '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries' '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules'
 rsync -r -u '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries' '/home/pitch/.local/share/Steam/steamapps/common/Mount & Blade With Fire and Sword/Modules'
 rsync -r -u  '/home/pitch/Desktop/Mercenaries Project/Server/Modules/Mercenaries' '/home/pitch/.wine/drive_c/Program Files (x86)/Mount&Blade With Fire and Sword/Modules'
+
+echo Generated new Item Data Json!
 echo Updated Server Files.
 echo Updated Client Files.
 echo Compiling was successful!
