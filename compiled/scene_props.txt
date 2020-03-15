@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1402
+ 1628
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4299,6 +4299,684 @@ spr_oim_trench_wood_d 0 0 oim_trench_wood_d bo_oim_trench_wood_d 0
 
 
 spr_oim_trench_wood_e 0 0 oim_trench_wood_e bo_oim_trench_wood_e 0
+
+
+spr_z_wooden_gate 0 0 ado_wood_arena_barrier bo_ado_wood_arena_barrier 0
+
+
+spr_z_wooden_barn 0 0 ado_wood_barn bo_ado_wood_barn 0
+
+
+spr_z_bench_fine 0 0 ado_wood_bench_fine bo_ado_wood_bench_fine 0
+
+
+spr_z_bench 0 0 ado_wood_bench_plain bo_ado_wood_bench_plain 0
+
+
+spr_z_wooden_bridge_long 0 0 ado_wood_bridge_long bo_ado_wood_bridge_long 0
+
+
+spr_z_wooden_ramp 0 0 ado_wood_bridge_long_ramp bo_wood_bridge_long_ramp 0
+
+
+spr_z_wooden_house 0 0 ado_wood_cabin_log bo_ado_wood_cabin_log 0
+
+
+spr_z_cart 0 0 ado_wood_cart bo_ado_wood_cart 0
+
+
+spr_z_cart_2 0 0 ado_wood_cart_2 bo_ado_wood_cart_2 0
+
+
+spr_z_cart_3 0 0 ado_wood_cart_3 bo_ado_wood_cart_3 0
+
+
+spr_z_cart_2_broken 0 0 ado_wood_cart_broken bo_ado_wood_cart_2_broken 0
+
+
+spr_z_cart_wheel 0 0 ado_wood_cart_wheel bo_ado_wood_cart_wheel 0
+
+
+spr_z_chair 0 0 ado_wood_chair1 bo_ado_wood_chair1 0
+
+
+spr_z_chair2 0 0 ado_wood_chair2 bo_ado_wood_chair2 0
+
+
+spr_z_chair_fine 0 0 ado_wood_chair_fine bo_ado_wood_chair_fine 0
+
+
+spr_z_coffin_closed 0 0 ado_wood_coffin_closed bo_ado_wood_coffin_closed 0
+
+
+spr_z_coffin_open 0 0 ado_wood_coffin_with_lid_off bo_ado_wood_coffin_with_lid_off 0
+
+
+spr_z_crate1 0 0 ado_wood_crate_1 bo_ado_wood_crate_1 0
+
+
+spr_z_crate2 0 0 ado_wood_crate_2 bo_ado_wood_crate_2 0
+
+
+spr_z_crate_broken 0 0 ado_wood_crate_broken bo_ado_wood_crate_broken 0
+
+
+spr_z_crate_closed 0 0 ado_wood_crate_closed bo_ado_wood_crate_closed 0
+
+
+spr_z_crate_tall 0 0 ado_wood_crate_tall bo_ado_wood_crate_tall 0
+
+
+spr_z_desk 0 0 ado_wood_desk bo_ado_wood_desk 0
+
+
+spr_z_desk2 0 0 ado_wood_desk_tall bo_ado_wood_desk_tall 0
+
+
+spr_z_dovecote 0 0 ado_wood_dovecote_tall bo_ado_wood_dovecote_tall 0
+
+
+spr_z_wooden_house_2 0 0 ado_wood_house bo_ado_wood_house 0
+
+
+spr_z_wooden_house_3 0 0 ado_wood_house_small bo_ado_wood_house_small 0
+
+
+spr_z_wooden_house_4 0 0 ado_wood_house_small_v2 bo_ado_wood_house_small_v2 0
+
+
+spr_z_ladder 0 0 ado_wood_ladder_simple bo_ado_wood_ladder_simple 0
+
+
+spr_z_ladder_broken 0 0 ado_wood_ladder_simple_broken bo_ado_wood_ladder_simple_broken 0
+
+
+spr_z_logs_pile 0 0 ado_wood_logs_pile bo_ado_wood_logs_pile 0
+
+
+spr_z_logs_pile_2 0 0 ado_wood_logs_pile_2 bo_ado_wood_logs_pile_2 0
+
+
+spr_z_log 0 0 ado_wood_log_1 bo_ado_wood_log_1 0
+
+
+spr_z_log_2 0 0 ado_wood_log_3 bo_ado_wood_log_3 0
+
+
+spr_z_palisade_long 0 0 ado_wood_palisade_long bo_ado_wood_palisade_long 0
+
+
+spr_z_palisade_decay 0 0 ado_wood_palisade_long_decay bo_ado_wood_palisade_long_decay 0
+
+
+spr_z_palisade_broken 0 0 ado_wood_palisade_long_destroyed bo_ado_wood_palisade_long_destroyed 0
+
+
+spr_z_palisade_plain 0 0 ado_wood_palisade_plain bo_ado_wood_palisade_plain 0
+
+
+spr_z_palisade_short 0 0 ado_wood_palisade_short bo_ado_wood_palisade_short 0
+
+
+spr_z_palisade_stake 0 0 ado_wood_palisade_stake bo_ado_wood_palisade_stake 0
+
+
+spr_z_wood_pile 0 0 ado_wood_pile bo_ado_wood_pile 0
+
+
+spr_z_wooden_pilory 0 0 ado_wood_pilory bo_ado_wood_pilory 0
+
+
+spr_z_wooden_platform 0 0 ado_wood_platform bo_ado_wood_platform 0
+
+
+spr_z_wooden_platform_raised 0 0 ado_wood_platform_raised bo_ado_wood_platform_raised 0
+
+
+spr_z_judas_cradle 0 0 ado_wood_judas_cradle bo_ado_wood_judas_cradle 0
+
+
+spr_z_spanish_donkey 0 0 ado_wood_spanish_donkey bo_ado_wood_spanish_donkey 0
+
+
+spr_z_wooden_stable 0 0 ado_wood_stable bo_ado_wood_stable 0
+
+
+spr_z_wooden_stable_simple 0 0 ado_wood_stable_simple bo_ado_wood_stable_simple 0
+
+
+spr_z_wooden_stairs 0 0 ado_wood_stairs bo_ado_wood_stairs 0
+
+
+spr_z_wooden_stairs_short 0 0 ado_wood_stairs_short bo_ado_wood_stairs_short 0
+
+
+spr_z_stockade_bending 0 0 ado_wood_stockade_bending bo_ado_wood_stockade_bending 0
+
+
+spr_z_stockade_long 0 0 ado_wood_stockade_long bo_ado_wood_stockade_long 0
+
+
+spr_z_stockade_broken 0 0 ado_wood_stockade_long_broken bo_ado_wood_stockade_long_broken 0
+
+
+spr_z_stockade_short 0 0 ado_wood_stockade_short bo_ado_wood_stockade_short 0
+
+
+spr_z_stockade_plank 0 0 ado_wood_stockade_plank bo_ado_wood_stockade_plank 0
+
+
+spr_z_stool 0 0 ado_wood_stool bo_ado_wood_stool 0
+
+
+spr_z_table_plain 0 0 ado_wood_table_plain bo_ado_wood_table_plain 0
+
+
+spr_z_table_round 0 0 ado_wood_table_round bo_ado_wood_table_round 0
+
+
+spr_z_table_round_2 0 0 ado_wood_table_round_2 bo_ado_wood_table_round_2 0
+
+
+spr_z_table_small_round 0 0 ado_wood_table_round_small bo_ado_wood_table_round_small 0
+
+
+spr_z_fence 0 0 ado_wood_tourney_fence bo_ado_wood_tourney_fence 0
+
+
+spr_z_fence_post 0 0 ado_wood_tourney_fence_post bo_ado_wood_tourney_fence_post 0
+
+
+spr_z_fence_short 0 0 ado_wood_tourney_fence_short bo_ado_wood_tourney_fence_short 0
+
+
+spr_z_well 0 0 ado_wood_well_stone_village bo_ado_wood_well_stone_village 0
+
+
+spr_z_wooden_well 0 0 ado_wood_well_village bo_ado_wood_well_village 0
+
+
+spr_z_wheelbarrow 0 0 ado_wood_wheelbarrow bo_ado_wood_wheelbarrow 0
+
+
+spr_z_wooden_windmill 0 0 ado_wood_windmill_post bo_ado_wood_windmill_post 0
+
+
+spr_z_wooden_gatehouse 0 0 ado_wood_gatehouse bo_ado_wood_gatehouse 0
+
+
+spr_z_wooden_gate_left 0 0 ado_wood_gate_left bo_ado_wood_gate_left 0
+
+
+spr_z_wooden_gate_right 0 0 ado_wood_gate_right bo_ado_wood_gate_right 0
+
+
+spr_z_wooden_gate_closed 0 0 ado_wood_gates_locked bo_ado_wood_gates_locked 0
+
+
+spr_z_galleon 0 0 galleon_prop_01 bo_galleon_prop_01 0
+
+
+spr_z_tankard 0 0 plain_tankard bo_plain_tankard 0
+
+
+spr_z_tankard_2 0 0 metal_wrapped_tankard bo_metal_wrapped_tankard 0
+
+
+spr_z_rum_bottle 0 0 rum_bottle bo_rum_bottle 0
+
+
+spr_z_ale_cask 0 0 ale_cask bo_ale_cask 0
+
+
+spr_z_ale_barrel 0 0 ale_barrel bo_ale_barrel 0
+
+
+spr_z_m_bridge_a 0 0 new_a_bridge_a bo_new_a_bridge_a 0
+
+
+spr_z_m_bridge_b 0 0 new_a_bridge_b bo_new_a_bridge_b 0
+
+
+spr_z_m_bridge_c 0 0 new_a_bridge_c bo_new_a_bridge_c 0
+
+
+spr_z_m_bridge_d 0 0 new_a_bridge_d bo_new_a_bridge_d 0
+
+
+spr_z_m_bridge_e 0 0 new_a_bridge_e bo_new_a_bridge_e 0
+
+
+spr_z_m_bridge_f 0 0 new_a_bridge_f bo_new_a_bridge_f 0
+
+
+spr_z_m_church_a 0 0 new_a_church_a bo_new_a_church_a 0
+
+
+spr_z_m_church_b 0 0 new_a_church_b bo_new_a_church_b 0
+
+
+spr_z_m_church_c 0 0 new_a_church_c bo_new_a_church_c 0
+
+
+spr_z_m_church_d 0 0 new_a_church_d bo_new_a_church_d 0
+
+
+spr_z_m_deco_a 0 0 new_a_church_deco_a bo_new_a_church_deco_a 0
+
+
+spr_z_m_deco_b 0 0 new_a_church_deco_b bo_new_a_church_deco_b 0
+
+
+spr_z_n_bridge_a 0 0 new_a_bridge_a2 bo_new_a_bridge_a 0
+
+
+spr_z_n_bridge_b 0 0 new_a_bridge_b2 bo_new_a_bridge_b 0
+
+
+spr_z_n_bridge_c 0 0 new_a_bridge_c2 bo_new_a_bridge_c 0
+
+
+spr_z_n_bridge_d 0 0 new_a_bridge_d2 bo_new_a_bridge_d 0
+
+
+spr_z_n_bridge_e 0 0 new_a_bridge_e2 bo_new_a_bridge_e 0
+
+
+spr_z_n_bridge_f 0 0 new_a_bridge_f2 bo_new_a_bridge_f 0
+
+
+spr_z_n_church_a 0 0 new_a_church_a2 bo_new_a_church_a 0
+
+
+spr_z_n_church_b 0 0 new_a_church_b2 bo_new_a_church_b 0
+
+
+spr_z_n_church_c 0 0 new_a_church_c2 bo_new_a_church_c 0
+
+
+spr_z_n_church_d 0 0 new_a_church_d2 bo_new_a_church_d 0
+
+
+spr_z_n_deco_a 0 0 new_a_church_deco_a2 bo_new_a_church_deco_a 0
+
+
+spr_z_n_deco_b 0 0 new_a_church_deco_b2 bo_new_a_church_deco_b 0
+
+
+spr_z_pr_castle_keep 0 0 pr_castle_keep_a bo_pr_castle_keep_a 0
+
+
+spr_z_pr_tower 0 0 pr_castle_tower_a bo_pr_castle_tower_a 0
+
+
+spr_z_pr_wall 0 0 pr_castle_wall_a bo_pr_castle_wall_a 0
+
+
+spr_z_pr_base 0 0 pr_church_base bo_pr_church_base 0
+
+
+spr_z_pr_stairs 0 0 pr_church_stairs bo_pr_church_stairs 0
+
+
+spr_z_pr_house 0 0 pr_farm_house_a bo_pr_farm_house_a 0
+
+
+spr_z_pr_fountain 0 0 pr_fountain bo_pr_fountain 0
+
+
+spr_z_pr_house2 0 0 pr_house_block_a bo_pr_house_block_a 0
+
+
+spr_z_pr_house3 0 0 pr_house_block_b bo_pr_house_block_b 0
+
+
+spr_z_pr_house4 0 0 pr_house_block_c bo_pr_house_block_c 0
+
+
+spr_z_pr_cathedral 0 0 pr_it_cathedral bo_pr_it_cathedral 0
+
+
+spr_z_pr_tower2 0 0 pr_it_cathedral_campanile bo_pr_it_cathedral_campanile 0
+
+
+spr_z_pr_house5 0 0 pr_it_house_a bo_pr_it_house_a 0
+
+
+spr_z_pr_house6 0 0 pr_it_house_a_2 bo_pr_it_house_a_2 0
+
+
+spr_z_pr_house7 0 0 pr_it_house_b bo_pr_it_house_b 0
+
+
+spr_z_pr_house8 0 0 pr_it_house_b_2 bo_pr_it_house_b_2 0
+
+
+spr_z_pr_house9 0 0 pr_it_house_c bo_pr_it_house_c 0
+
+
+spr_z_pr_house10 0 0 pr_it_house_d bo_pr_it_house_d 0
+
+
+spr_z_pr_house11 0 0 pr_it_house_e bo_pr_it_house_e 0
+
+
+spr_z_pr_house12 0 0 pr_it_house_f_new bo_pr_it_house_f_new 0
+
+
+spr_z_pr_house13 0 0 pr_it_house_g bo_pr_it_house_g 0
+
+
+spr_z_pr_house14 0 0 pr_it_house_h bo_pr_it_house_h 0
+
+
+spr_z_pr_house15 0 0 pr_it_house_h_2 bo_pr_it_house_h_2 0
+
+
+spr_z_pr_house16 0 0 pr_it_house_i bo_pr_it_house_i 0
+
+
+spr_z_pr_house17 0 0 pr_it_house_j bo_pr_it_house_j 0
+
+
+spr_z_pr_house18 0 0 pr_it_house_k bo_pr_it_house_k 0
+
+
+spr_z_pr_house19 0 0 pr_it_house_l bo_pr_it_house_l 0
+
+
+spr_z_pr_house20 0 0 pr_it_house_m bo_pr_it_house_m 0
+
+
+spr_z_pr_house21 0 0 pr_it_house_n_int bo_pr_it_house_n_int 0
+
+
+spr_z_pr_tower3 0 0 gdanisko_tower bo_gdanisko_tower 0
+
+
+spr_z_pr_courtyard 0 0 courtyard_entry_new bo_courtyard_entry_new 0
+
+
+spr_z_pr_courtyard2 0 0 courtyard_entry_new2 bo_courtyard_entry_new 0
+
+
+spr_z_pr_stairs2 0 0 a_stairs_1 bo_a_stairs_1 0
+
+
+spr_z_pr_tower4 0 0 a_tower_1 bo_a_tower_1 0
+
+
+spr_z_pr_wall2 0 0 a_wall_1 bo_a_wall_1 0
+
+
+spr_z_pr_wall3 0 0 z_chis_rus_muur_1 bo_z_chis_rus_muur_1 0
+
+
+spr_z_pr_wall4 0 0 z_chis_rus_castle_g_battlement_a bo_z_chis_rus_castle_g_battlement_a 0
+
+
+spr_z_pr_keep 0 0 Keep1 bo_Keep1 0
+
+
+spr_z_pr_tower5 0 0 b_tower_1 bo_b_tower_1 0
+
+
+spr_z_pr_shed 0 0 village_shed_b2 bo_village_shed_b 0
+
+
+spr_z_pr_small_wall 0 0 village_wall_a2 bo_village_wall_a 0
+
+
+spr_z_pr_small_wall2 0 0 village_wall_b2 bo_village_wall_b 0
+
+
+spr_z_pr_small_wall3 0 0 village_wall_a3 bo_village_wall_a 0
+
+
+spr_z_pr_small_wall4 0 0 village_wall_b3 bo_village_wall_b 0
+
+
+spr_z_pr_small_wall5 0 0 village_wall_a4 bo_village_wall_a 0
+
+
+spr_z_pr_small_wall6 0 0 village_wall_b4 bo_village_wall_b 0
+
+
+spr_z_pr_bridge 0 0 BridgeHigh bo_BridgeHigh 0
+
+
+spr_z_pr_church 0 0 white_church bo_Building7 0
+
+
+spr_z_pr_watermill 0 0 watermill bo_watermill 0
+
+
+spr_z_pr_blacksmith 0 0 blacksmith bo_blacksmith 0
+
+
+spr_z_ado_tombstone_a 0 0 ado_anglo-saxon_church_tombstone_A bo_ado_anglo-saxon_church_tombstone_A 0
+
+
+spr_z_ado_tombstone_b 0 0 ado_anglo-saxon_church_tombstone_B bo_ado_anglo-saxon_church_tombstone_B 0
+
+
+spr_z_ado_tombstone_c 0 0 ado_anglo-saxon_church_tombstone_C bo_new_a_bridge_aado_anglo-saxon_church_tombstone_C 0
+
+
+spr_z_ado_arch 0 0 ado_med_brick_arch bo_ado_med_brick_arch 0
+
+
+spr_z_ado_wall 0 0 ado_med_brick_wall bo_ado_med_brick_wall 0
+
+
+spr_z_ado_wall_short 0 0 ado_med_brick_wall_short bo_ado_med_brick_wall_short 0
+
+
+spr_z_ado_wall_short2 0 0 ado_med_brick_wall_short_2 bo_ado_med_brick_wall_short_2 0
+
+
+spr_z_ado_wall_passage 0 0 ado_med_brick_wall_short_passage bo_ado_med_brick_wall_short_passage 0
+
+
+spr_z_ado_rubble 0 0 ado_med_bricks_rubble_small bo_ado_med_bricks_rubble_small 0
+
+
+spr_z_ado_grave_earth 0 0 ado_med_grave_earth_mound bo_ado_med_grave_earth_mound 0
+
+
+spr_z_ado_house 0 0 ado_med_house_brick_wood bo_ado_med_house_brick_wood 0
+
+
+spr_z_ado_house2 0 0 ado_med_house_bricks_small bo_ado_med_house_bricks_small 0
+
+
+spr_z_ado_house3 0 0 ado_med_house_bricks_plaster_wood_roof_small ado_med_house_bricks_plaster_wood_roof_small 0
+
+
+spr_z_ado_house4 0 0 ado_med_house_oblong bo_ado_med_house_oblong 0
+
+
+spr_z_ado_house5 0 0 ado_med_house_oblong_with_gate bo_ado_med_house_oblong_with_gate 0
+
+
+spr_z_ado_house6 0 0 ado_med_house_wood_tall bo_ado_med_house_wood_tall 0
+
+
+spr_z_ado_mansion 0 0 ado_med_mansion bo_ado_med_mansion 0
+
+
+spr_z_ado_twins 0 0 ado_med_tower_twins bo_ado_med_tower_twins 0
+
+
+spr_z_tunnel_curved 0 0 tunnel_curved bo_tunnel_curved 0
+
+
+spr_z_tunnel_crossing 0 0 tunnel_crossing bo_tunnel_crossing 0
+
+
+spr_z_tunnel_support 0 0 tunnel_support bo_tunnel_support 0
+
+
+spr_z_tunnel_crossing_2 0 0 tunnel_crossing_supports bo_tunnel_crossing_supports 0
+
+
+spr_z_tunnel_split 0 0 tunnel_split bo_tunnel_split 0
+
+
+spr_z_tunnel_split2 0 0 tunnel_split_supports bo_tunnel_split_supports 0
+
+
+spr_z_tunnel_chasm 0 0 chasm bo_chasm 0
+
+
+spr_z_tunnel_curved2 0 0 tunnel_curved_supports bo_tunnel_curved_supports 0
+
+
+spr_z_tunnel_short 0 0 tunnel_short bo_tunnel_short 0
+
+
+spr_z_tunnel_short2 0 0 tunnel_short_supports bo_tunnel_short_supports 0
+
+
+spr_z_tunnel_sloped 0 0 tunnel_sloped bo_tunnel_sloped 0
+
+
+spr_z_tunnel_sloped2 0 0 tunnel_sloped_supports bo_tunnel_sloped_supports 0
+
+
+spr_z_tunnel_straight 0 0 tunnel_straight bo_tunnel_straight 0
+
+
+spr_z_tunnel_straight2 0 0 tunnel_straight_supports bo_tunnel_straight_supports 0
+
+
+spr_z_v_earth_cliff 0 0 terrain_earth_cliff_01 bo_terrain_cliff_01 0
+
+
+spr_z_v_earth_cliff2 0 0 terrain_earth_cliff_02 bo_terrain_cliff_02 0
+
+
+spr_z_v_earth_cliff3 0 0 terrain_earth_cliff_03 bo_terrain_cliff_03 0
+
+
+spr_z_v_earth_cliff4 0 0 terrain_earth_cliff_04 bo_terrain_cliff_04 0
+
+
+spr_z_v_earth_cliff5 0 0 terrain_earth_cliff_05 bo_terrain_cliff_05 0
+
+
+spr_z_v_earth_cliff6 0 0 terrain_earth_cliff_06 bo_terrain_cliff_06 0
+
+
+spr_z_v_earth_rocks 0 0 terrain_earth_rockpile_01 bo_terrain_rockpile_01 0
+
+
+spr_z_v_earth_mound 0 0 terrain_earth_mound_01 bo_terrain_mound_01 0
+
+
+spr_z_v_earth_drift1 0 0 terrain_earth_drift_01 bo_terrain_drift_01 0
+
+
+spr_z_v_earth_drift2 0 0 terrain_earth_drift_02 bo_terrain_drift_02 0
+
+
+spr_z_v_earth_drift3 0 0 terrain_earth_drift_03 bo_terrain_drift_03 0
+
+
+spr_z_v_grass_cliff 0 0 terrain_grass_cliff_01 bo_terrain_cliff_01 0
+
+
+spr_z_v_grass_cliff2 0 0 terrain_grass_cliff_02 bo_terrain_cliff_02 0
+
+
+spr_z_v_grass_cliff3 0 0 terrain_grass_cliff_03 bo_terrain_cliff_03 0
+
+
+spr_z_v_grass_cliff4 0 0 terrain_grass_cliff_04 bo_terrain_cliff_04 0
+
+
+spr_z_v_grass_cliff5 0 0 terrain_grass_cliff_05 bo_terrain_cliff_05 0
+
+
+spr_z_v_grass_cliff6 0 0 terrain_grass_cliff_06 bo_terrain_cliff_06 0
+
+
+spr_z_v_grass_rocks 0 0 terrain_grass_rockpile_01 bo_terrain_rockpile_01 0
+
+
+spr_z_v_grass_mound 0 0 terrain_grass_mound_01 bo_terrain_mound_01 0
+
+
+spr_z_v_grass_drift1 0 0 terrain_grass_drift_01 bo_terrain_drift_01 0
+
+
+spr_z_v_grass_drift2 0 0 terrain_grass_drift_02 bo_terrain_drift_02 0
+
+
+spr_z_v_grass_drift3 0 0 terrain_grass_drift_03 bo_terrain_drift_03 0
+
+
+spr_z_v_snow_cliff 0 0 terrain_snow_cliff_01 bo_terrain_cliff_01 0
+
+
+spr_z_v_snow_cliff2 0 0 terrain_snow_cliff_02 bo_terrain_cliff_02 0
+
+
+spr_z_v_snow_cliff3 0 0 terrain_snow_cliff_03 bo_terrain_cliff_03 0
+
+
+spr_z_v_snow_cliff4 0 0 terrain_snow_cliff_04 bo_terrain_cliff_04 0
+
+
+spr_z_v_snow_cliff5 0 0 terrain_snow_cliff_05 bo_terrain_cliff_05 0
+
+
+spr_z_v_snow_cliff6 0 0 terrain_snow_cliff_06 bo_terrain_cliff_06 0
+
+
+spr_z_v_snow_rocks 0 0 terrain_snow_rockpile_01 bo_terrain_rockpile_01 0
+
+
+spr_z_v_snow_mound 0 0 terrain_snow_mound_01 bo_terrain_mound_01 0
+
+
+spr_z_v_snow_drift1 0 0 terrain_snow_drift_01 bo_terrain_drift_01 0
+
+
+spr_z_v_snow_drift2 0 0 terrain_snow_drift_02 bo_terrain_drift_02 0
+
+
+spr_z_v_snow_drift3 0 0 terrain_snow_drift_03 bo_terrain_drift_03 0
+
+
+spr_z_v_roots 0 0 terrain_roots_01a bo_terrain_roots_01a 0
+
+
+spr_z_v_roots2 0 0 terrain_roots_01b bo_terrain_roots_01a 0
+
+
+spr_z_v_roots3 0 0 terrain_roots_01c bo_terrain_roots_01a 0
+
+
+spr_z_v_roots4 0 0 terrain_roots_02a bo_terrain_roots_02a 0
+
+
+spr_z_v_roots5 0 0 terrain_roots_02b bo_terrain_roots_02a 0
+
+
+spr_z_v_roots6 0 0 terrain_roots_02c bo_terrain_roots_02a 0
+
+
+spr_z_v_rock1 0 0 terrain_rock_large_01 bo_terrain_rock_large_01 0
+
+
+spr_z_v_rock2 0 0 terrain_rock_large_02 bo_terrain_rock_large_02 0
+
+
+spr_z_v_rock3 0 0 terrain_rock_large_03 bo_terrain_rock_large_03 0
+
+
+spr_z_v_rocks 0 0 terrain_rocks_small_01a bo_terrain_rocks_small_01a 0
 
 
 spr_prison_cart 65536 0 prison_cart bo_prison_cart 0

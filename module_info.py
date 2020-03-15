@@ -3,5 +3,5 @@
 # Make sure you use forward slashes (/) and NOT backward slashes (\)
 
 #export_dir = "c:/MiB-OiM/MiB-New World/MiB-New World/Build/Modules/Ogniem i Mieczem/"
-#export_dir = "c:/MiB-OiM/Mount&Blade/SBL-OiM/build_dlc/Modules/Ogniem i Mieczem/"
+#export_dir = "C:/Users/Pawel/Desktop/Ogniem i Mieczem - Dzikie Pola - Kopia/Modules/Mercenaries"
 export_dir = "./compiled/"
