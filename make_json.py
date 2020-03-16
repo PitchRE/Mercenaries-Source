@@ -121,8 +121,9 @@ def loop_items():
         item_type = item_types(item[3])
         if item_type in worth_items:
             if item[0] in blacklist:
+                print item[0]
                 buyable = 0
-            if item[2][0][0] in blacklist:
+            elif item[2][0][0] in blacklist:
                 buyable = 0    
             else:
                 buyable = 1    

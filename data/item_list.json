@@ -199,7 +199,7 @@
     }, 
     "arena_helmet_blue": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "arena_helmet_blue", 
         "game_id": 64, 
         "head_armor": 26, 
@@ -749,7 +749,7 @@
     }, 
     "bad_arrows": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_arrows", 
         "game_id": 681, 
         "head_armor": null, 
@@ -771,7 +771,7 @@
     }, 
     "bad_berdish": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_berdish", 
         "game_id": 762, 
         "head_armor": null, 
@@ -793,7 +793,7 @@
     }, 
     "bad_boots": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_boots", 
         "game_id": 845, 
         "head_armor": 0, 
@@ -815,7 +815,7 @@
     }, 
     "bad_boots_k": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_boots_k", 
         "game_id": 848, 
         "head_armor": 0, 
@@ -837,7 +837,7 @@
     }, 
     "bad_boots_mosk": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_boots_mosk", 
         "game_id": 846, 
         "head_armor": 0, 
@@ -859,7 +859,7 @@
     }, 
     "bad_boots_p": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_boots_p", 
         "game_id": 851, 
         "head_armor": 0, 
@@ -881,7 +881,7 @@
     }, 
     "bad_boots_swed": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_boots_swed", 
         "game_id": 847, 
         "head_armor": 0, 
@@ -903,7 +903,7 @@
     }, 
     "bad_botforts": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_botforts", 
         "game_id": 854, 
         "head_armor": 0, 
@@ -925,7 +925,7 @@
     }, 
     "bad_bulava": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_bulava", 
         "game_id": 760, 
         "head_armor": null, 
@@ -947,7 +947,7 @@
     }, 
     "bad_bullets": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_bullets", 
         "game_id": 684, 
         "head_armor": null, 
@@ -969,7 +969,7 @@
     }, 
     "bad_chekan": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_chekan", 
         "game_id": 758, 
         "head_armor": null, 
@@ -991,7 +991,7 @@
     }, 
     "bad_gloves": {
         "body_armor": 1, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_gloves", 
         "game_id": 841, 
         "head_armor": 0, 
@@ -1013,7 +1013,7 @@
     }, 
     "bad_horse": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_horse", 
         "game_id": 675, 
         "head_armor": null, 
@@ -1035,7 +1035,7 @@
     }, 
     "bad_karabin": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_karabin", 
         "game_id": 699, 
         "head_armor": null, 
@@ -1057,7 +1057,7 @@
     }, 
     "bad_lance": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_lance", 
         "game_id": 773, 
         "head_armor": null, 
@@ -1079,7 +1079,7 @@
     }, 
     "bad_luk": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_luk", 
         "game_id": 727, 
         "head_armor": null, 
@@ -1101,7 +1101,7 @@
     }, 
     "bad_musket": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_musket", 
         "game_id": 707, 
         "head_armor": null, 
@@ -1123,7 +1123,7 @@
     }, 
     "bad_p_palash": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_p_palash", 
         "game_id": 742, 
         "head_armor": null, 
@@ -1145,7 +1145,7 @@
     }, 
     "bad_palash": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_palash", 
         "game_id": 739, 
         "head_armor": null, 
@@ -1167,7 +1167,7 @@
     }, 
     "bad_pike": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_pike", 
         "game_id": 768, 
         "head_armor": null, 
@@ -1189,7 +1189,7 @@
     }, 
     "bad_pistol": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_pistol", 
         "game_id": 689, 
         "head_armor": null, 
@@ -1211,7 +1211,7 @@
     }, 
     "bad_sablya_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_sablya_a", 
         "game_id": 745, 
         "head_armor": null, 
@@ -1233,7 +1233,7 @@
     }, 
     "bad_sablya_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_sablya_b", 
         "game_id": 748, 
         "head_armor": null, 
@@ -1255,7 +1255,7 @@
     }, 
     "bad_shield": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_shield", 
         "game_id": 731, 
         "head_armor": null, 
@@ -1277,7 +1277,7 @@
     }, 
     "bad_shpaga": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_shpaga", 
         "game_id": 736, 
         "head_armor": null, 
@@ -1299,7 +1299,7 @@
     }, 
     "bad_spear": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_spear", 
         "game_id": 771, 
         "head_armor": null, 
@@ -1321,7 +1321,7 @@
     }, 
     "bad_toporik": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "bad_toporik", 
         "game_id": 756, 
         "head_armor": null, 
@@ -3631,7 +3631,7 @@
     }, 
     "fast_horse": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "fast_horse", 
         "game_id": 678, 
         "head_armor": null, 
@@ -3653,7 +3653,7 @@
     }, 
     "fast_pistol": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "fast_pistol", 
         "game_id": 693, 
         "head_armor": null, 
@@ -4071,7 +4071,7 @@
     }, 
     "good_arrows": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_arrows", 
         "game_id": 683, 
         "head_armor": null, 
@@ -4093,7 +4093,7 @@
     }, 
     "good_berdish": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_berdish", 
         "game_id": 763, 
         "head_armor": null, 
@@ -4115,7 +4115,7 @@
     }, 
     "good_boots_k": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_boots_k", 
         "game_id": 850, 
         "head_armor": 0, 
@@ -4159,7 +4159,7 @@
     }, 
     "good_boots_ttr": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_boots_ttr", 
         "game_id": 857, 
         "head_armor": 0, 
@@ -4181,7 +4181,7 @@
     }, 
     "good_botforts": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_botforts", 
         "game_id": 856, 
         "head_armor": 0, 
@@ -4203,7 +4203,7 @@
     }, 
     "good_bulava": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_bulava", 
         "game_id": 761, 
         "head_armor": null, 
@@ -4225,7 +4225,7 @@
     }, 
     "good_bullets": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_bullets", 
         "game_id": 686, 
         "head_armor": null, 
@@ -4291,7 +4291,7 @@
     }, 
     "good_chekan": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_chekan", 
         "game_id": 759, 
         "head_armor": null, 
@@ -4313,7 +4313,7 @@
     }, 
     "good_gloves": {
         "body_armor": 5, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_gloves", 
         "game_id": 843, 
         "head_armor": 0, 
@@ -4335,7 +4335,7 @@
     }, 
     "good_horse": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_horse", 
         "game_id": 677, 
         "head_armor": null, 
@@ -4357,7 +4357,7 @@
     }, 
     "good_k_shablya": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_k_shablya", 
         "game_id": 755, 
         "head_armor": null, 
@@ -4379,7 +4379,7 @@
     }, 
     "good_karabin": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_karabin", 
         "game_id": 703, 
         "head_armor": null, 
@@ -4423,7 +4423,7 @@
     }, 
     "good_lance": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_lance", 
         "game_id": 775, 
         "head_armor": null, 
@@ -4467,7 +4467,7 @@
     }, 
     "good_musket_m": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_musket_m", 
         "game_id": 711, 
         "head_armor": null, 
@@ -4489,7 +4489,7 @@
     }, 
     "good_p_palash": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_p_palash", 
         "game_id": 744, 
         "head_armor": null, 
@@ -4555,7 +4555,7 @@
     }, 
     "good_palash_m": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_palash_m", 
         "game_id": 741, 
         "head_armor": null, 
@@ -4643,7 +4643,7 @@
     }, 
     "good_pike_m": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_pike_m", 
         "game_id": 770, 
         "head_armor": null, 
@@ -4731,7 +4731,7 @@
     }, 
     "good_sablya_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_sablya_a", 
         "game_id": 747, 
         "head_armor": null, 
@@ -4753,7 +4753,7 @@
     }, 
     "good_sablya_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_sablya_b", 
         "game_id": 750, 
         "head_armor": null, 
@@ -4797,7 +4797,7 @@
     }, 
     "good_shield": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_shield", 
         "game_id": 733, 
         "head_armor": null, 
@@ -4907,7 +4907,7 @@
     }, 
     "good_shpaga_m": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_shpaga_m", 
         "game_id": 738, 
         "head_armor": null, 
@@ -4929,7 +4929,7 @@
     }, 
     "good_spear": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_spear", 
         "game_id": 772, 
         "head_armor": null, 
@@ -4951,7 +4951,7 @@
     }, 
     "good_toporik": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "good_toporik", 
         "game_id": 757, 
         "head_armor": null, 
@@ -5237,7 +5237,7 @@
     }, 
     "gud_luk": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "gud_luk", 
         "game_id": 729, 
         "head_armor": null, 
@@ -5281,7 +5281,7 @@
     }, 
     "gusar_lance": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "gusar_lance", 
         "game_id": 776, 
         "head_armor": null, 
@@ -7481,7 +7481,7 @@
     }, 
     "m_alebarda": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_alebarda", 
         "game_id": 765, 
         "head_armor": null, 
@@ -7503,7 +7503,7 @@
     }, 
     "m_dwustwol_karabin": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_dwustwol_karabin", 
         "game_id": 723, 
         "head_armor": null, 
@@ -7525,7 +7525,7 @@
     }, 
     "m_dwustwol_pistol": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_dwustwol_pistol", 
         "game_id": 725, 
         "head_armor": null, 
@@ -7547,7 +7547,7 @@
     }, 
     "m_granata_small": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_granata_small", 
         "game_id": 840, 
         "head_armor": null, 
@@ -7569,7 +7569,7 @@
     }, 
     "m_janissar_hat": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_janissar_hat", 
         "game_id": 915, 
         "head_armor": 3, 
@@ -7591,7 +7591,7 @@
     }, 
     "m_janissary_tapki": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_janissary_tapki", 
         "game_id": 917, 
         "head_armor": 0, 
@@ -7613,7 +7613,7 @@
     }, 
     "m_kleymor": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_kleymor", 
         "game_id": 767, 
         "head_armor": null, 
@@ -7635,7 +7635,7 @@
     }, 
     "m_mosk_bad_armor": {
         "body_armor": 15, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_bad_armor", 
         "game_id": 780, 
         "head_armor": 0, 
@@ -7657,7 +7657,7 @@
     }, 
     "m_mosk_good_armor": {
         "body_armor": 53, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_good_armor", 
         "game_id": 783, 
         "head_armor": 0, 
@@ -7679,7 +7679,7 @@
     }, 
     "m_mosk_good_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_good_helmet", 
         "game_id": 825, 
         "head_armor": 35, 
@@ -7701,7 +7701,7 @@
     }, 
     "m_mosk_kava_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_kava_forma", 
         "game_id": 779, 
         "head_armor": 0, 
@@ -7723,7 +7723,7 @@
     }, 
     "m_mosk_light_armor": {
         "body_armor": 23, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_light_armor", 
         "game_id": 781, 
         "head_armor": 0, 
@@ -7745,7 +7745,7 @@
     }, 
     "m_mosk_light_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_light_helmet", 
         "game_id": 823, 
         "head_armor": 15, 
@@ -7767,7 +7767,7 @@
     }, 
     "m_mosk_norm_armor": {
         "body_armor": 38, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_norm_armor", 
         "game_id": 782, 
         "head_armor": 0, 
@@ -7789,7 +7789,7 @@
     }, 
     "m_mosk_norm_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_norm_helmet", 
         "game_id": 824, 
         "head_armor": 25, 
@@ -7811,7 +7811,7 @@
     }, 
     "m_mosk_notsogood_armor": {
         "body_armor": 42, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_notsogood_armor", 
         "game_id": 784, 
         "head_armor": 0, 
@@ -7833,7 +7833,7 @@
     }, 
     "m_mosk_pehota_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_pehota_forma", 
         "game_id": 777, 
         "head_armor": 0, 
@@ -7855,7 +7855,7 @@
     }, 
     "m_mosk_shapka": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_shapka", 
         "game_id": 822, 
         "head_armor": 5, 
@@ -7877,7 +7877,7 @@
     }, 
     "m_mosk_strelok_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_strelok_forma", 
         "game_id": 778, 
         "head_armor": 0, 
@@ -7899,7 +7899,7 @@
     }, 
     "m_mosk_uber_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_mosk_uber_helmet", 
         "game_id": 826, 
         "head_armor": 45, 
@@ -7921,7 +7921,7 @@
     }, 
     "m_pol_good_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_good_helmet", 
         "game_id": 831, 
         "head_armor": 50, 
@@ -7943,7 +7943,7 @@
     }, 
     "m_pol_good_k_armor": {
         "body_armor": 50, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_good_k_armor", 
         "game_id": 790, 
         "head_armor": 0, 
@@ -7965,7 +7965,7 @@
     }, 
     "m_pol_good_p_armor": {
         "body_armor": 35, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_good_p_armor", 
         "game_id": 791, 
         "head_armor": 0, 
@@ -7987,7 +7987,7 @@
     }, 
     "m_pol_good_shapka": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_good_shapka", 
         "game_id": 828, 
         "head_armor": 10, 
@@ -8009,7 +8009,7 @@
     }, 
     "m_pol_kava_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_kava_forma", 
         "game_id": 787, 
         "head_armor": 0, 
@@ -8031,7 +8031,7 @@
     }, 
     "m_pol_light_armor": {
         "body_armor": 16, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_light_armor", 
         "game_id": 788, 
         "head_armor": 0, 
@@ -8053,7 +8053,7 @@
     }, 
     "m_pol_light_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_light_helmet", 
         "game_id": 829, 
         "head_armor": 21, 
@@ -8075,7 +8075,7 @@
     }, 
     "m_pol_norm_armor": {
         "body_armor": 25, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_norm_armor", 
         "game_id": 789, 
         "head_armor": 0, 
@@ -8097,7 +8097,7 @@
     }, 
     "m_pol_norm_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_norm_helmet", 
         "game_id": 830, 
         "head_armor": 30, 
@@ -8119,7 +8119,7 @@
     }, 
     "m_pol_pehota_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_pehota_forma", 
         "game_id": 785, 
         "head_armor": 0, 
@@ -8141,7 +8141,7 @@
     }, 
     "m_pol_shapka": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_shapka", 
         "game_id": 827, 
         "head_armor": 5, 
@@ -8163,7 +8163,7 @@
     }, 
     "m_pol_strelok_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_strelok_forma", 
         "game_id": 786, 
         "head_armor": 0, 
@@ -8185,7 +8185,7 @@
     }, 
     "m_pol_uber_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_uber_helmet", 
         "game_id": 832, 
         "head_armor": 45, 
@@ -8207,7 +8207,7 @@
     }, 
     "m_pol_uber_k_armor": {
         "body_armor": 50, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_uber_k_armor", 
         "game_id": 793, 
         "head_armor": 0, 
@@ -8229,7 +8229,7 @@
     }, 
     "m_pol_uber_p_armor": {
         "body_armor": 50, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_pol_uber_p_armor", 
         "game_id": 792, 
         "head_armor": 0, 
@@ -8251,7 +8251,7 @@
     }, 
     "m_sovnya": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_sovnya", 
         "game_id": 764, 
         "head_armor": null, 
@@ -8273,7 +8273,7 @@
     }, 
     "m_swed_good_k_armor": {
         "body_armor": 55, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_good_k_armor", 
         "game_id": 816, 
         "head_armor": 0, 
@@ -8295,7 +8295,7 @@
     }, 
     "m_swed_good_k_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_good_k_helmet", 
         "game_id": 820, 
         "head_armor": 45, 
@@ -8317,7 +8317,7 @@
     }, 
     "m_swed_good_p_armor": {
         "body_armor": 35, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_good_p_armor", 
         "game_id": 814, 
         "head_armor": 0, 
@@ -8339,7 +8339,7 @@
     }, 
     "m_swed_good_p_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_good_p_helmet", 
         "game_id": 821, 
         "head_armor": 60, 
@@ -8361,7 +8361,7 @@
     }, 
     "m_swed_kava_forma": {
         "body_armor": 3, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_kava_forma", 
         "game_id": 811, 
         "head_armor": 0, 
@@ -8383,7 +8383,7 @@
     }, 
     "m_swed_light_armor": {
         "body_armor": 9, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_light_armor", 
         "game_id": 812, 
         "head_armor": 0, 
@@ -8405,7 +8405,7 @@
     }, 
     "m_swed_light_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_light_helmet", 
         "game_id": 818, 
         "head_armor": 30, 
@@ -8427,7 +8427,7 @@
     }, 
     "m_swed_norm_armor": {
         "body_armor": 25, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_norm_armor", 
         "game_id": 813, 
         "head_armor": 0, 
@@ -8449,7 +8449,7 @@
     }, 
     "m_swed_norm_p_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_norm_p_helmet", 
         "game_id": 819, 
         "head_armor": 38, 
@@ -8471,7 +8471,7 @@
     }, 
     "m_swed_pehot_forma": {
         "body_armor": 3, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_pehot_forma", 
         "game_id": 809, 
         "head_armor": 0, 
@@ -8493,7 +8493,7 @@
     }, 
     "m_swed_shapka": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_shapka", 
         "game_id": 817, 
         "head_armor": 2, 
@@ -8515,7 +8515,7 @@
     }, 
     "m_swed_strelok_forma": {
         "body_armor": 3, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_strelok_forma", 
         "game_id": 810, 
         "head_armor": 0, 
@@ -8537,7 +8537,7 @@
     }, 
     "m_swed_uber_p_armor": {
         "body_armor": 50, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_swed_uber_p_armor", 
         "game_id": 815, 
         "head_armor": 0, 
@@ -8559,7 +8559,7 @@
     }, 
     "m_ttr_archer_forma": {
         "body_armor": 1, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_archer_forma", 
         "game_id": 801, 
         "head_armor": 0, 
@@ -8581,7 +8581,7 @@
     }, 
     "m_ttr_bad_armor_a": {
         "body_armor": 5, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_bad_armor_a", 
         "game_id": 803, 
         "head_armor": 0, 
@@ -8603,7 +8603,7 @@
     }, 
     "m_ttr_bad_armor_b": {
         "body_armor": 5, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_bad_armor_b", 
         "game_id": 804, 
         "head_armor": 0, 
@@ -8625,7 +8625,7 @@
     }, 
     "m_ttr_good_armor": {
         "body_armor": 40, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_good_armor", 
         "game_id": 808, 
         "head_armor": 0, 
@@ -8647,7 +8647,7 @@
     }, 
     "m_ttr_good_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_good_helmet", 
         "game_id": 839, 
         "head_armor": 35, 
@@ -8669,7 +8669,7 @@
     }, 
     "m_ttr_kava_forma": {
         "body_armor": 1, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_kava_forma", 
         "game_id": 802, 
         "head_armor": 0, 
@@ -8691,7 +8691,7 @@
     }, 
     "m_ttr_light_armor_a": {
         "body_armor": 10, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_light_armor_a", 
         "game_id": 805, 
         "head_armor": 0, 
@@ -8713,7 +8713,7 @@
     }, 
     "m_ttr_light_armor_b": {
         "body_armor": 10, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_light_armor_b", 
         "game_id": 806, 
         "head_armor": 0, 
@@ -8735,7 +8735,7 @@
     }, 
     "m_ttr_light_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_light_helmet", 
         "game_id": 837, 
         "head_armor": 25, 
@@ -8757,7 +8757,7 @@
     }, 
     "m_ttr_norm_armor": {
         "body_armor": 25, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_norm_armor", 
         "game_id": 807, 
         "head_armor": 0, 
@@ -8779,7 +8779,7 @@
     }, 
     "m_ttr_norm_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_norm_helmet", 
         "game_id": 838, 
         "head_armor": 30, 
@@ -8801,7 +8801,7 @@
     }, 
     "m_ttr_shapka": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ttr_shapka", 
         "game_id": 836, 
         "head_armor": 5, 
@@ -8823,7 +8823,7 @@
     }, 
     "m_twohand_sword": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_twohand_sword", 
         "game_id": 766, 
         "head_armor": null, 
@@ -8845,7 +8845,7 @@
     }, 
     "m_ukr_bad_armor": {
         "body_armor": 10, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_bad_armor", 
         "game_id": 797, 
         "head_armor": 0, 
@@ -8867,7 +8867,7 @@
     }, 
     "m_ukr_good_armor": {
         "body_armor": 30, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_good_armor", 
         "game_id": 800, 
         "head_armor": 0, 
@@ -8889,7 +8889,7 @@
     }, 
     "m_ukr_kava_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_kava_forma", 
         "game_id": 796, 
         "head_armor": 0, 
@@ -8911,7 +8911,7 @@
     }, 
     "m_ukr_light_armor": {
         "body_armor": 15, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_light_armor", 
         "game_id": 798, 
         "head_armor": 0, 
@@ -8933,7 +8933,7 @@
     }, 
     "m_ukr_light_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_light_helmet", 
         "game_id": 834, 
         "head_armor": 20, 
@@ -8955,7 +8955,7 @@
     }, 
     "m_ukr_norm_armor": {
         "body_armor": 23, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_norm_armor", 
         "game_id": 799, 
         "head_armor": 0, 
@@ -8977,7 +8977,7 @@
     }, 
     "m_ukr_norm_helmet": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_norm_helmet", 
         "game_id": 835, 
         "head_armor": 28, 
@@ -8999,7 +8999,7 @@
     }, 
     "m_ukr_pehota_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_pehota_forma", 
         "game_id": 794, 
         "head_armor": 0, 
@@ -9021,7 +9021,7 @@
     }, 
     "m_ukr_shapka": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_shapka", 
         "game_id": 833, 
         "head_armor": 6, 
@@ -9043,7 +9043,7 @@
     }, 
     "m_ukr_strelok_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_ukr_strelok_forma", 
         "game_id": 795, 
         "head_armor": 0, 
@@ -9065,7 +9065,7 @@
     }, 
     "m_yanichar_forma": {
         "body_armor": 2, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_yanichar_forma", 
         "game_id": 916, 
         "head_armor": 0, 
@@ -9087,7 +9087,7 @@
     }, 
     "m_yatagan_bad": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_yatagan_bad", 
         "game_id": 918, 
         "head_armor": null, 
@@ -9109,7 +9109,7 @@
     }, 
     "m_yatagan_good": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "m_yatagan_good", 
         "game_id": 919, 
         "head_armor": null, 
@@ -10209,7 +10209,7 @@
     }, 
     "no_item": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "no_item", 
         "game_id": 0, 
         "head_armor": null, 
@@ -10341,7 +10341,7 @@
     }, 
     "norm_arrows": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_arrows", 
         "game_id": 682, 
         "head_armor": null, 
@@ -10363,7 +10363,7 @@
     }, 
     "norm_boots_k": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_boots_k", 
         "game_id": 849, 
         "head_armor": 0, 
@@ -10385,7 +10385,7 @@
     }, 
     "norm_boots_p": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_boots_p", 
         "game_id": 852, 
         "head_armor": 0, 
@@ -10407,7 +10407,7 @@
     }, 
     "norm_botforts": {
         "body_armor": 0, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_botforts", 
         "game_id": 855, 
         "head_armor": 0, 
@@ -10429,7 +10429,7 @@
     }, 
     "norm_bullets": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_bullets", 
         "game_id": 685, 
         "head_armor": null, 
@@ -10451,7 +10451,7 @@
     }, 
     "norm_gloves": {
         "body_armor": 3, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_gloves", 
         "game_id": 842, 
         "head_armor": 0, 
@@ -10473,7 +10473,7 @@
     }, 
     "norm_horse": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_horse", 
         "game_id": 676, 
         "head_armor": null, 
@@ -10495,7 +10495,7 @@
     }, 
     "norm_karabin": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_karabin", 
         "game_id": 701, 
         "head_armor": null, 
@@ -10517,7 +10517,7 @@
     }, 
     "norm_lance": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_lance", 
         "game_id": 774, 
         "head_armor": null, 
@@ -10539,7 +10539,7 @@
     }, 
     "norm_luk": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_luk", 
         "game_id": 728, 
         "head_armor": null, 
@@ -10561,7 +10561,7 @@
     }, 
     "norm_musket": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_musket", 
         "game_id": 709, 
         "head_armor": null, 
@@ -10583,7 +10583,7 @@
     }, 
     "norm_p_palash": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_p_palash", 
         "game_id": 743, 
         "head_armor": null, 
@@ -10605,7 +10605,7 @@
     }, 
     "norm_palash": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_palash", 
         "game_id": 740, 
         "head_armor": null, 
@@ -10627,7 +10627,7 @@
     }, 
     "norm_pika": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_pika", 
         "game_id": 769, 
         "head_armor": null, 
@@ -10649,7 +10649,7 @@
     }, 
     "norm_pistol": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_pistol", 
         "game_id": 691, 
         "head_armor": null, 
@@ -10671,7 +10671,7 @@
     }, 
     "norm_sablya_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_sablya_a", 
         "game_id": 746, 
         "head_armor": null, 
@@ -10693,7 +10693,7 @@
     }, 
     "norm_sablya_b": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_sablya_b", 
         "game_id": 749, 
         "head_armor": null, 
@@ -10715,7 +10715,7 @@
     }, 
     "norm_shield": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_shield", 
         "game_id": 732, 
         "head_armor": null, 
@@ -10737,7 +10737,7 @@
     }, 
     "norm_shpaga": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norm_shpaga", 
         "game_id": 737, 
         "head_armor": null, 
@@ -10803,7 +10803,7 @@
     }, 
     "norn_k_shablya": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "norn_k_shablya", 
         "game_id": 754, 
         "head_armor": null, 
@@ -12079,7 +12079,7 @@
     }, 
     "power_pistol": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "power_pistol", 
         "game_id": 695, 
         "head_armor": null, 
@@ -14719,7 +14719,7 @@
     }, 
     "samopal_m": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "samopal_m", 
         "game_id": 687, 
         "head_armor": null, 
@@ -15335,7 +15335,7 @@
     }, 
     "stal_shield": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "stal_shield", 
         "game_id": 734, 
         "head_armor": null, 
@@ -16083,7 +16083,7 @@
     }, 
     "t_bad_musket": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "t_bad_musket", 
         "game_id": 715, 
         "head_armor": null, 
@@ -16105,7 +16105,7 @@
     }, 
     "t_bad_sablya_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "t_bad_sablya_a", 
         "game_id": 751, 
         "head_armor": null, 
@@ -16127,7 +16127,7 @@
     }, 
     "t_good_musket": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "t_good_musket", 
         "game_id": 719, 
         "head_armor": null, 
@@ -16149,7 +16149,7 @@
     }, 
     "t_good_sablya_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "t_good_sablya_a", 
         "game_id": 753, 
         "head_armor": null, 
@@ -16171,7 +16171,7 @@
     }, 
     "t_norm_musket": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "t_norm_musket", 
         "game_id": 717, 
         "head_armor": null, 
@@ -16193,7 +16193,7 @@
     }, 
     "t_norm_sablya_a": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "t_norm_sablya_a", 
         "game_id": 752, 
         "head_armor": null, 
@@ -16215,7 +16215,7 @@
     }, 
     "t_uber_musket": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "t_uber_musket", 
         "game_id": 721, 
         "head_armor": null, 
@@ -16831,7 +16831,7 @@
     }, 
     "tank_horse": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "tank_horse", 
         "game_id": 679, 
         "head_armor": null, 
@@ -18305,7 +18305,7 @@
     }, 
     "uber_gloves": {
         "body_armor": 8, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "uber_gloves", 
         "game_id": 844, 
         "head_armor": 0, 
@@ -18327,7 +18327,7 @@
     }, 
     "uber_horse": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "uber_horse", 
         "game_id": 680, 
         "head_armor": null, 
@@ -18349,7 +18349,7 @@
     }, 
     "uber_karabin": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "uber_karabin", 
         "game_id": 705, 
         "head_armor": null, 
@@ -18371,7 +18371,7 @@
     }, 
     "uber_luk": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "uber_luk", 
         "game_id": 730, 
         "head_armor": null, 
@@ -18393,7 +18393,7 @@
     }, 
     "uber_mushket": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "uber_mushket", 
         "game_id": 713, 
         "head_armor": null, 
@@ -18415,7 +18415,7 @@
     }, 
     "uber_pistol": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "uber_pistol", 
         "game_id": 697, 
         "head_armor": null, 
@@ -18437,7 +18437,7 @@
     }, 
     "uber_shield": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "uber_shield", 
         "game_id": 735, 
         "head_armor": null, 
@@ -18547,7 +18547,7 @@
     }, 
     "very_bad_horse": {
         "body_armor": null, 
-        "buyable": 1, 
+        "buyable": 0, 
         "code_name": "very_bad_horse", 
         "game_id": 674, 
         "head_armor": null, 
