@@ -31,7 +31,6 @@ itp_type_bullets         = 0x0000000000000012
 itp_type_animal          = 0x0000000000000013
 itp_type_book            = 0x0000000000000014
 
-
 # itp_type_horse           = -1
 # itp_type_one_handed_wpn  = -2
 # itp_type_two_handed_wpn  = -3

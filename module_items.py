@@ -2610,7 +2610,7 @@ items = [
  75 , weight(1)|difficulty(0)|spd_rtng(109) | weapon_length(46)|swing_damage(21 , cut) | thrust_damage(40 ,  pierce),imodbits_sword_high ],
 ["pikeman_dagger", "Pikeman's Dagger", [("pikeman_dagger",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_secondary|itp_no_parry, itc_dagger|itcf_carry_dagger_front_left, 
  64 , weight(1)|difficulty(0)|spd_rtng(108) | weapon_length(41)|swing_damage(23 , cut) | thrust_damage(40 ,  pierce),imodbits_sword_high ],
-["rondel_dagger", "Rondel Dagger", [("rondel_dagger",0)], itp_type_one_handed_wpn|itp_merchandise|itcf_thrust_onehanded|itp_primary|itp_secondary|itp_no_parry, itc_dagger|itcf_carry_dagger_front_left, 
+["rondel_dagger", "Rondel Dagger", [("rondel_dagger",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_secondary|itp_no_parry, itc_dagger|itcf_carry_dagger_front_left, 
  91 , weight(1.5)|difficulty(0)|spd_rtng(106) | weapon_length(47)|swing_damage(0 , cut) | thrust_damage(40 ,  pierce),imodbits_sword_high ],
 
 
@@ -2633,7 +2633,7 @@ items = [
  6325 , weight(4.35)|abundance(10)|head_armor(58)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["byzantion", "Byzantion", [("byzantion",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
- 6325 , weight(4.35)|abundance(10)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+ 6325 , weight(4.35)|abundance(10)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
 ["open_salet", "Open Salet", [("open_salet",0)], itp_merchandise|itp_type_head_armor   ,0,
  6325 , weight(4.35)|abundance(10)|head_armor(30)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],

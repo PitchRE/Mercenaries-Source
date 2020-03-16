@@ -1,8 +1,9 @@
 import glob
 import os
-from module_items import *
-from header_items_fake import *
+from module_items import items
+from header_items import *
 import json
+from blacklisted_items import blacklist
 
 
 worth_items = ["itp_type_horse", "itp_type_one_handed_wpn", "itp_type_two_handed_wpn", "itp_type_polearm", "itp_type_arrows", "itp_type_bolts", "itp_type_shield", "itp_type_bow", "itp_type_crossbow", "itp_type_thrown", "itp_type_head_armor", "itp_type_body_armor", "itp_type_foot_armor", "itp_type_hand_armor", "itp_type_bullets", "itp_type_pistol", "itp_type_musket"]
@@ -119,6 +120,12 @@ def loop_items():
     for index, item in enumerate(items):
         item_type = item_types(item[3])
         if item_type in worth_items:
+            if item[0] in blacklist:
+                buyable = 0
+            if item[2][0][0] in blacklist:
+                buyable = 0    
+            else:
+                buyable = 1    
             if "_melee" in item[0]:    
                 continue
             if item_type in armors:
@@ -177,6 +184,8 @@ def loop_items():
                 "horse_speed": horse_speed,
                 "missile_speed": missile_speed,
                 "horse_maneuver": horse_maneuver,
+                "buyable": buyable,
+                "model_name": item[2][0][0],
             }
     return item_list        
 
