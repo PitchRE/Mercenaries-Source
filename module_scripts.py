@@ -11,6 +11,7 @@ from header_terrain_types import *
 from header_music import *
 from header_presentations import *
 from ID_animations import *
+from ID_sounds import *
 
 
 ####################################################################################################################
@@ -7635,32 +7636,11 @@ scripts = [
 			(assign, reg55, ":player_troop_id"),
 			(display_message, "@DEBUG: Did give player {reg1} following troop: {reg55}"),
 			
+
+
 		#####	(player_set_team_no, ":player_id", 1),
 			
 			#reg16 and so on are skills etc
-			(troop_raise_attribute, ":player_troop_id", ca_strength, reg16),
-			(troop_raise_attribute, ":player_troop_id", ca_agility, reg17),
-			
-			(troop_raise_skill, ":player_troop_id", skl_ironflesh, reg18),
-			(troop_raise_skill, ":player_troop_id", skl_power_strike, reg19),
-			(troop_raise_skill, ":player_troop_id", skl_power_throw, reg20),
-			(troop_raise_skill, ":player_troop_id", skl_power_draw, reg21),
-  
-			(troop_raise_skill, ":player_troop_id", skl_shield, reg23),
-			(troop_raise_skill, ":player_troop_id", skl_athletics, reg24),
-			(troop_raise_skill, ":player_troop_id", skl_riding, reg25),
-			
-			(troop_raise_proficiency, ":player_troop_id", wpt_one_handed_weapon, reg26),
-			(troop_raise_proficiency, ":player_troop_id", wpt_two_handed_weapon, reg27),
-			(troop_raise_proficiency, ":player_troop_id", wpt_polearm, reg28),
-			(troop_raise_proficiency, ":player_troop_id", wpt_archery, reg29),
-			(troop_raise_proficiency, ":player_troop_id", wpt_throwing, reg30),  
-      			(troop_raise_proficiency, ":player_troop_id", wpt_crossbow, reg22),
-
-       (troop_raise_proficiency, ":player_troop_id", wpt_firearm, reg31),  
-			#reg31 THIS IS THE CROSSBOW PROFENCIE IF YOU need it you can get the val of here probably use this for firearms?
-			  
-           
 
 
      (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_attribute, ":player_troop_id", ca_strength, reg16),
@@ -7674,17 +7654,46 @@ scripts = [
     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_skill, ":player_troop_id", skl_shield, reg23),
     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_skill, ":player_troop_id", skl_athletics, reg24),
     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_skill, ":player_troop_id", skl_riding, reg25),
+ (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_skill, ":player_troop_id", skl_horse_archery, reg22),
 
 
-   (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_one_handed_weapon, reg26),
-      (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_two_handed_weapon, reg27),
-         (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_polearm, reg28),
+     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_one_handed_weapon, reg26),
+     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_two_handed_weapon, reg27),
+     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_polearm, reg28),
      (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_archery, reg29),
-         (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_throwing, reg30),
-         (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_crossbow, reg22),
-                  (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_firearm, reg31),
+     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_throwing, reg30),
+     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_crossbow, reg31),
+     (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_firearm, reg31),
+
+			(troop_raise_attribute, ":player_troop_id", ca_strength, reg16),
+			(troop_raise_attribute, ":player_troop_id", ca_agility, reg17),
+			
+			(troop_raise_skill, ":player_troop_id", skl_ironflesh, reg18),
+			(troop_raise_skill, ":player_troop_id", skl_power_strike, reg19),
+			(troop_raise_skill, ":player_troop_id", skl_power_throw, reg20),
+			(troop_raise_skill, ":player_troop_id", skl_power_draw, reg21),
+  
+			(troop_raise_skill, ":player_troop_id", skl_shield, reg23),
+			(troop_raise_skill, ":player_troop_id", skl_athletics, reg24),
+			(troop_raise_skill, ":player_troop_id", skl_riding, reg25),
+      (troop_raise_skill, ":player_troop_id", skl_horse_archery, reg22),
+			
+			(troop_raise_proficiency_linear, ":player_troop_id", wpt_one_handed_weapon, reg26),
+			(troop_raise_proficiency_linear, ":player_troop_id", wpt_two_handed_weapon, reg27),
+			(troop_raise_proficiency_linear, ":player_troop_id", wpt_polearm, reg28),
+			(troop_raise_proficiency_linear, ":player_troop_id", wpt_archery, reg29),
+			(troop_raise_proficiency_linear, ":player_troop_id", wpt_throwing, reg30),  
+      (troop_raise_proficiency_linear, ":player_troop_id", wpt_crossbow, reg31),
+       (troop_raise_proficiency, ":player_troop_id", wpt_firearm, reg31),  
+			#reg31 THIS IS THE CROSSBOW PROFENCIE IF YOU need it you can get the val of here probably use this for firearms?
+			  
+           
 
 
+     (str_store_player_username, s30, ":player_id"),
+     (display_message, "@ Gave player {s30} firearm skill {reg31} and crossbow {reg22}"),
+
+          
 
 			(try_begin),
 				(gt, reg2, 0),
@@ -7751,6 +7760,7 @@ scripts = [
 				(multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_pass_troop_data, ":player_troop_id", reg9, 8),
 			(try_end),
 			(try_begin),
+      (display_message, "@ horse {reg10}"),
 				(gt, reg10, 0),
 				#(player_add_spawn_item, ":player_id", ek_horse, reg10),
 				(player_set_slot, ":player_id", slot_player_horse, reg10),
@@ -7812,7 +7822,6 @@ scripts = [
 			(else_try),
 				(eq, reg2, 0), #Player did not level up
 				(str_store_string, s60, "@You got {reg3} experience ({reg8} EXP needed to level up)!"),
-          (multiplayer_send_string_to_player, ":player_id", multiplayer_event_show_server_message  , s60),
 				(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, s60),
 				(player_set_slot, ":player_id", slot_player_experience_to_next_level, reg5),
 				(player_set_slot, ":player_id", slot_player_level, reg4),
@@ -7844,7 +7853,8 @@ scripts = [
             (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
                   (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
       (multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, "@Please rejoin server in order to load your character."),
-      (kick_player, ":player_id"),
+    					(str_store_string, s60, "@Experience:{reg12} ^Login: {reg50} ^Password: {s0}"),
+    	(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_information_message, s60),
 		(else_try),
 			(eq, ":return_code", -3), #Character not bound to this account
 			(player_is_active, reg1),
@@ -8434,6 +8444,51 @@ scripts = [
             (assign, "$g_multiplayer_next_team_2_faction", ":value_2"),
           (try_end),
         (try_end),
+      (else_try),
+        (eq, ":event_type", multiplayer_event_data_server),
+      (store_script_param, ":event_type_custom", 3),
+        (store_script_param, ":value_1", 4),
+          (store_script_param, ":value_2", 5),
+
+
+#### VISOR OPEN/CLOSE BEGIN
+        (try_begin),
+          (eq, ":event_type_custom", 1),
+             (assign, reg5, ":value_1"),
+     
+    (player_get_agent_id, ":agent_id", ":value_1"),
+    (agent_equip_item, ":agent_id", ":value_2"), 
+    (get_max_players, ":max_players"),
+     
+    (try_for_range, ":other_player_id", 1, ":max_players"),
+    (player_is_active, ":other_player_id"),   
+  
+    (multiplayer_send_3_int_to_player, ":other_player_id", multiplayer_event_data_client, 1, ":agent_id",  ":value_2"),
+    (try_end),
+    #### VISOR OPEN/CLOSE END
+    (else_try),
+  (eq, ":event_type_custom", 2),
+# horse whistle
+
+      (agent_get_position, pos1, ":value_2"),
+   (agent_play_sound, ":value_2", snd_whistle),
+   (assign, ":is_whistled", 0),
+	(try_for_agents,":agent"),
+	
+         (agent_is_alive,":agent"),
+         (neg|agent_is_human,":agent"),
+		 (agent_get_position, pos2, ":agent"),
+		 (get_distance_between_positions,":distance",pos2,pos1),
+		 (ge,":distance",250),
+(eq, ":is_whistled", 0),
+(agent_set_scripted_destination,":agent",pos1,1),
+  (assign, ":is_whistled", 1),
+	(try_end),	
+    (try_end),
+
+
+
+
       (else_try),
         (eq, ":event_type", multiplayer_event_open_game_rules),
         (try_begin),
@@ -9196,12 +9251,14 @@ scripts = [
       (else_try),
       (eq, ":event_type", multiplayer_event_send_updated_troop_prof),
       (try_begin),
+      (display_message, "@client event"),
       (store_script_param, ":troop_id", 3),
       (store_script_param, ":prof_no", 4),
       (store_script_param, ":value", 5),
-      
       (troop_raise_proficiency_linear, ":troop_id", ":prof_no", ":value"),
-       
+    
+
+        
       (try_end),
       (else_try),
       (eq, ":event_type", multiplayer_event_send_updated_troop_skill),
@@ -9212,8 +9269,30 @@ scripts = [
       (store_script_param, ":value", 5),
       (troop_raise_skill, ":troop_id", ":skill_id", ":value"),
       (try_end),
-          (else_try),
-        ###
+           (else_try),
+      ### SUB EVENTS CLIENT PITCH BEGIN
+          (eq, ":event_type", multiplayer_event_data_client),
+          (store_script_param, ":event_type_custom", 3),
+           (store_script_param, ":value_1", 4),
+            (store_script_param, ":value_2", 5),
+                     
+            ### HELMET VISOR SCRIPT BEGIN #####
+          
+      (try_begin),
+      (eq, ":event_type_custom", 1),
+      (assign, reg40, ":value_1"),
+        (assign, reg41, ":value_2"),
+      (display_message, "@ agent id {reg40}, weapon {reg41}"),
+      (agent_equip_item, ":value_1", ":value_2"), 
+        (agent_play_sound, ":value_1", 99),
+      (try_end),
+                    
+            ### HELMET VISOR SCRIPT END ####
+          
+
+ 
+   ### SUB EVENTS CLIENT PITCH END
+    (else_try),
           (eq, ":event_type", multiplayer_event_return_changing_game_type_allowed),
           (store_script_param, ":value", 3),
           (assign, "$g_multiplayer_changing_game_type_allowed", ":value"),
@@ -46069,6 +46148,28 @@ scripts = [
 			(try_end),
 		(try_end), 
 	]),
+
+  ("agent_equip_sync_multiplayer",
+   [(store_script_param, ":player", 1),
+      (store_script_param, ":item_id", 2),
+      (try_begin),
+      (assign, reg5, ":player"),
+(multiplayer_send_3_int_to_server, multiplayer_event_data_server, 1, ":player",  ":item_id"),
+(try_end),
+       
+ ]),
+
+  ("whistle_horse",
+   [(store_script_param, ":player", 1),
+   (store_script_param, ":agent", 2),
+    
+      (try_begin),
+(multiplayer_send_3_int_to_server, multiplayer_event_data_server, 2, ":player", ":agent"),
+(try_end),
+       
+ ]),
+
+
 	
 ]
 
