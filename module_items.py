@@ -2994,7 +2994,7 @@ items = [
 ["dhal_m", "Gold Dhal Shield", [("dhal_m",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
  450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
 
-### Draco end ###
+### Draco end ##
 
 ["items_end", "End of list", [("shield_round_a",0)], 0, 0, 1, 0, 0],
 ]
