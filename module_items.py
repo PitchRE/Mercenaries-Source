@@ -2980,7 +2980,7 @@ items = [
 
 # Shields
 
-["dhal_ae", "Turle Dhal Shield, [("dhal_ae",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
+["dhal_ae", "Turle Dhal Shield", [("dhal_ae",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
  450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
 
 ["dhal_af", "Silver Dhal Shield", [("dhal_af",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
