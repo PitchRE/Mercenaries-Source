@@ -198,12 +198,13 @@ multiplayer_set_map_weather = (
      
 	(else_try),
       (eq, ":cur_scene", "scn_mp_old_castle"),
+      (set_skybox, 16, 44),
+      (set_global_cloud_amount, 100), 
       (set_rain, 100),
-      (set_skybox, 16, 16), 
 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_arena"),
-      (set_skybox, 48, 20), 
+      (set_skybox, 48, 19), 
 	(else_try),
       (eq, ":cur_scene", "scn_mp_swamp_delta"),
    
