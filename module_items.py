@@ -2698,7 +2698,6 @@ items = [
 ["normanhelmbalaclavacoif", "normanhelmbalaclavacoif", [("normanhelmbalaclavacoif",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
  6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
-<<<<<<< HEAD
 ### Draco ###
 
 # Armours 
@@ -2980,7 +2979,7 @@ items = [
 
 # Shields
 
-["dhal_ae", "Turle Dhal Shield, [("dhal_ae",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
+["dhal_ae", "Turle Dhal Shield", [("dhal_ae",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
  450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
 
 ["dhal_af", "Silver Dhal Shield", [("dhal_af",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
@@ -2996,10 +2995,6 @@ items = [
  450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
 
 ### Draco end ##
-=======
-
-
->>>>>>> 5c76f3a6b2448e8907a76b9a54181910abc222bd
 
 ["items_end", "End of list", [("shield_round_a",0)], 0, 0, 1, 0, 0],
 ]
