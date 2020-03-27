@@ -1809,7 +1809,7 @@ presentations = [
 	 
       (try_begin),
         (eq, "$g_multiplayer_selected_map", "scn_multi_scene_1"),
-        (assign, ":map_image", "mesh_mp_ui_host_maps_1"),
+        (assign, ":map_image", "mesh_mp_ui_host_maps_swamp_delta"),
       (else_try),
         (eq, "$g_multiplayer_selected_map", "scn_multi_scene_2"),
         (assign, ":map_image", "mesh_mp_ui_host_maps_2"),
@@ -1874,6 +1874,7 @@ presentations = [
 	    (eq, "$g_multiplayer_selected_map", "scn_mp_swamp_delta"), 
 		(assign, ":map_image", "mesh_mp_ui_host_maps_swamp_delta"),
 	  (else_try), 
+  
 	    (eq, "$g_multiplayer_selected_map", "scn_mp_marketplace"), 
 		(assign, ":map_image", "mesh_mp_ui_host_maps_marketplace"),
 	  (else_try), 

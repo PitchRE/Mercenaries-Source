@@ -978,7 +978,7 @@ scenes = [
     [],[],"outer_terrain_plain"),
 
 # multiplayer
-  ("multi_scene_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001300389800003a4ea000058340000637a0000399b",
+      ("multi_scene_1",sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000003000050040059567000002fa800037fe00002347",
     [],[],"outer_terrain_plain"),
   ("multi_scene_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000012002a0b20004992700006e54000007fe00001fd2",
     [],[],"outer_terrain_steppe"),
@@ -1059,6 +1059,7 @@ scenes = [
 
  ("mp_arabian_fort",sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000003000050040059567000002fa800037fe00002347",
     [],[],"outer_terrain_plain"),
+
 
 	
   ("multiplayer_maps_end",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001300389800003a4ea000058340000637a0000399b",

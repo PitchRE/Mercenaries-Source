@@ -293,8 +293,13 @@ multiplayer_set_map_weather = (
       (eq, ":cur_scene", "scn_mp_new_3"),
 
       (set_skybox, 1, 1), 
+	(else_try), ## Folwark
+          (eq, ":cur_scene", "scn_multi_scene_1"),
+   
+      (set_skybox, 51, 25),
 
-     
+
+
 	(else_try),
       (eq, ":cur_scene", "scn_mp_old_castle"),
       (set_skybox, 1, 1), 
