@@ -2692,8 +2692,303 @@ items = [
 ["normanhelmbalaclavacoif", "Norman Helm With Coif", [("normanhelmbalaclavacoif",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
  6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
 
+### Draco ###
 
+# Armours 
 
+["cuirassier3", "Black Masterwork Plate Armour", [("cuirassier3",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["cuirassier4", "Masterwork Plate Armour", [("cuirassier4",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["plate_ssm_011", "Masterwork Chainmail Plate Armour", [("plate_ssm_011",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["plate_ssm_10043", "Chainmail Plate Armour", [("plate_ssm_10043",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["char_aina_a", "Eastern Bronze Chainmail", [("char_aina_a",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["char_aina_e", "Eastern Chainmail ", [("char_aina_e",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["kazaghand_f", "Blue Kazaghand", [("kazaghand_f",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["kazaghand_e", "Purple-Blue Kazaghand", [("kazaghand_e",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["kazaghand_d", "Yellow-Green Kazaghand", [("kazaghand_d",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["kazaghand_a", "Purple-Turquoise Kazaghand", [("kazaghand_a",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["peti_a", "Indo Peti", [("peti_a",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["bnw_armour", "Black and White Armour", [("bnw_armour_stripes",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["baretunic_02", "Brown Uniform", [("baretunic_02",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["baretunic_03", "Red Uniform", [("baretunic_03",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["baretunic_04", "Blue Uniform", [("baretunic_04",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["baretunic_08", "Grey Uniform", [("baretunic_08",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["buffcoat_02", "Blue Buffcoat", [("buffcoat_02",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["buffcoat_04", "Grey Buffcoat", [("buffcoat_04",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["buffcoat_07", "Red Buffcoat", [("buffcoat_07",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["civilian_02", "Civilian Grey Clothes", [("civilian_02",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["civilian_03", "Vivilian Brown Clothes", [("civilian_03",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["firelock_03", "Green Musketeer Uniform", [("firelock_03",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["genericpikeman_04", "Yellow Pikeman Armour", [("genericpikeman_04",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["genericpikeman_06", "Red Pikeman Armour", [("genericpikeman_06",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["genericpikeman_08", "Blue Pikeman Armour", [("genericpikeman_08",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["genericpikeman_10", "Grey Pikeman Armour", [("genericpikeman_10",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["genericpikeman_12", "White Pikeman Armour", [("genericpikeman_12",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["generictunic_01", "Grey Musketeer Uniform", [("generictunic_01",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["generictunic_02", "Red Musketeer Uniform", [("generictunic_02",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["generictunic_03", "Blue Musketeer Uniform", [("generictunic_03",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["generictunic_04", "Yellow Musketeer Uniform", [("generictunic_04",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["generictunic_11", "White Musketeer Uniform", [("generictunic_11",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["generictunic_14", "Brown Musketeer Uniform", [("generictunic_14",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["irontorso_04", "Yellow Cuirassier Armour", [("irontorso_04",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["irontorso_06", "Red Cuirassier Armour", [("irontorso_06",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["irontorso_07", "Blue Cuirassier Armour", [("irontorso_07",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["newmodeldragoon_01", "Dragon Uniform", [("newmodeldragoon_01",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["newmodelpikeman_01", "Blue-Red Pikeman Armour", [("newmodelpikeman_01",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["newmodelpikeman_03", "Brown-Red Pikeman Armour", [("newmodelpikeman_03",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["newmodeltunic_02", "Brown-Red Musketeer Uniform", [("newmodeltunic_02",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["richleather_02", "Red Leather Musksteer Uniform", [("richleather_02",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["richleather_03", "Blue Leather Musketeer Uniform", [("richleather_03",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["richleather_04", "Yellow Leather Musketeer Uniform", [("richleather_04",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["tartantunic_01", "Tartan Tunic", [("tartantunic_01",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["armor10_b", "Black Mail Robe", [("armor10_b",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["armor10", "White Mail Robe", [("armor10",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["armor23", "Plate and Leather Armour", [("armor23",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["armor31", "Leather Stripe Robe", [("armor31",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["armor8_g", "Red Leather Armour", [("armor8_g",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["armor8_w", "White Leather Armour", [("armor8_w",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3696 , weight(19)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(8) ,imodbits_plate ],
+
+["kapalin", "Kapalin", [("kapalin",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["kapalin2", "Covered-Face Kapalin", [("kapalin2",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["beret1", "Beret", [("beret1",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["beret3", "Slanting Beret", [("beret3",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["lobster2", "Black Lobster-tailed Helmet", [("lobster2",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["strawhat1", "Straw Pot-Hat", [("strawhat1",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["strawhat2", "Straw Hat", [("strawhat2",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["woolyblack", "Black Wooly Cap", [("woolyblack",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["woolyblue", "Blue Wooly Cap", [("woolyblue",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["woolybrown", "Brown Wooly Cap", [("woolybrown",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["Fur_Helmet2", "Fur Helmet", [("Fur_Helmet2",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["ddfh_new", "Fur with Feathers Helmet", [("ddfh_new",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["chionite_hat_e", "Red Cap", [("chionite_hat_e",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["chionite_hat_c", "White Cap", [("chionite_hat_c",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["kulah_khud_za", "Gold Kulah Khud", [("kulah_khud_za",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["kulah_khud_zac", "Silver Kulah Khud", [("kulah_khud_zac",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["kulah_zirah_zc", "Kulah Khud with Turban", [("kulah_zirah_zc",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["mighfar_a", "Silver Mighfar", [("mighfar_a",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["mighfar_ab", "Gold Mighfar", [("mighfar_ab",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["bluefeatherhat1", "Blue Hat with Feathers", [("bluefeatherhat1",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["greenhat3", "Green Hat", [("greenhat3",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["morion4", "Great Morion", [("morion4",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["officerhatblack", "Black Hat with Feathers", [("officerhatblack",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["officerhatbrown", "Brown Hat with Feathers", [("officerhatbrown",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["woolyred", "Red Wooly Cap", [("woolyred",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["woolyyellow", "Yellow Wooly Cap", [("woolyyellow",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["timurid_helm_cc", "Timurid Helmet", [("timurid_helm_cc",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["timurid_helm_d", "Timurid Helmet with Plume", [("timurid_helm_d",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["helm10", "Black Hood", [("helm10",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["helm10_g", "Red Hood", [("helm10_g",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["helm10_l", "Brown Hood", [("helm10_l",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["helm10_w", "White Hood", [("helm10_w",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["helm24", "Winged Helmet", [("helm24",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["helm25", "Chainmail Hood", [("helm25",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["cloak10", "Black Cloak with Hood", [("cloak10",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["cloak2", "Red Cloak with Hood", [("cloak2",0)], itp_merchandise|itp_type_head_armor|itp_covers_beard   ,0,
+ 6325 , weight(4.35)|abundance(10)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
+
+["boot6", "High-bound Leather Boots", [("boot6",0)], itp_merchandise| itp_type_foot_armor  |itp_civilian | itp_attach_armature,0,
+ 90 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth ],
+
+# Horses
+
+["charger_bronze", "Gold Charger", [("charger_bronze",0)], itp_type_horse, 0,
+  600,abundance(50)|hit_points(100)|body_armor(9)|difficulty(3)|horse_speed(44)|horse_maneuver(52)|horse_charge(10),imodbits_horse_basic],
+
+["camel", "Camel", [("camel",0)], itp_type_horse, 0,
+  600,abundance(50)|hit_points(100)|body_armor(9)|difficulty(3)|horse_speed(44)|horse_maneuver(52)|horse_charge(10),imodbits_horse_basic],
+
+["horse2", "Horse with Chainmail", [("horse2",0)], itp_type_horse, 0,
+  600,abundance(50)|hit_points(100)|body_armor(9)|difficulty(3)|horse_speed(44)|horse_maneuver(52)|horse_charge(10),imodbits_horse_basic],
+
+["horse3", "Plate-Armoured Horse", [("horse3",0)], itp_type_horse, 0,
+  600,abundance(50)|hit_points(100)|body_armor(9)|difficulty(3)|horse_speed(44)|horse_maneuver(52)|horse_charge(10),imodbits_horse_basic],
+
+# Shields
+
+["dhal_ae", "Turle Dhal Shield", [("dhal_ae",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
+ 450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
+
+["dhal_af", "Silver Dhal Shield", [("dhal_af",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
+ 450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
+
+["dhal_b", "Bronze Dhal Shield", [("dhal_b",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
+ 450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
+
+["dhal_k", "Green Dhal Shield", [("dhal_k",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
+ 450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
+
+["dhal_m", "Gold Dhal Shield", [("dhal_m",0)], itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
+ 450 , weight(2.75)|hit_points(300)|body_armor(1)|spd_rtng(85)|shield_width(35)|shield_height(35),imodbits_shield ],
+
+### Draco end ##
 
 ["items_end", "End of list", [("shield_round_a",0)], 0, 0, 1, 0, 0],
 ]
