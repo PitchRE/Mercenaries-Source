@@ -11,6 +11,10 @@ from ID_factions import *
 ########################################################
 ##  ITEM SLOTS             #############################
 ########################################################
+warcry_cooldown = 25
+warcry_active_time = 10
+
+
 
 slot_item_is_checked               = 0
 slot_item_food_bonus               = 1
@@ -806,7 +810,9 @@ slot_player_bot_type_4_wanted                  = 38
 slot_player_spawn_count                        = 39
 slot_player_captain_bot_data_begin             = 40
 slot_player_captain_bot_data_end               = slot_player_captain_bot_data_begin + 12 # there are 12 bot types for each faction
-slot_player_reload_disabled_until_time           = 89
+slot_player_reload_disabled_until_time           = 99
+slot_player_warcry_cooldown = 100
+slot_player_warcry_active_time = 101
 
 
 #Illuminati

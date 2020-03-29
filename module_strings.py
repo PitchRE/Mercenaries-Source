@@ -1565,7 +1565,7 @@ strings = [
 # Warband added texts
 
 #multiplayer scene names
-  ("multi_scene_1", "{!}Ruins"),
+  ("multi_scene_1", "Folwark"),
   ("multi_scene_2", "{!}Village"),
   ("multi_scene_3", "{!}Castle"),
   ("multi_scene_4", "{!}Ruined Fort"),

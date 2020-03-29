@@ -541,5 +541,18 @@ mesh_mp_ui_host_maps_18 = 539
 mesh_mp_ui_host_maps_19 = 540
 mesh_mp_ui_host_maps_20 = 541
 mesh_mp_ui_host_maps_21 = 542
+mesh_skill_arrow_to_the_knee = 543
+mesh_skill_warcry = 544
+mesh_skill_warcry_0 = 545
+mesh_skill_warcry_25 = 546
+mesh_skill_warcry_50 = 547
+mesh_skill_warcry_75 = 548
+mesh_skill_whistle = 549
+mesh_skill_whistle_0 = 550
+mesh_skill_whistle_25 = 551
+mesh_skill_whistle_50 = 552
+mesh_skill_whistle_75 = 553
+mesh_effect_stronger = 554
+mesh_effect_heavy_armor = 555
 
 

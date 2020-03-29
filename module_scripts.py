@@ -7665,6 +7665,8 @@ scripts = [
      (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_crossbow, reg31),
      (multiplayer_send_3_int_to_player, ":player_id", multiplayer_event_send_updated_troop_prof, ":player_troop_id", wpt_firearm, reg31),
 
+     (multiplayer_send_2_int_to_player, ":player_id", multiplayer_event_data_client, 2, reg32),
+
 			(troop_raise_attribute, ":player_troop_id", ca_strength, reg16),
 			(troop_raise_attribute, ":player_troop_id", ca_agility, reg17),
 			
@@ -7811,8 +7813,10 @@ scripts = [
 			(try_begin),
 				(eq, reg2, 1), #Player did level up
 				(str_store_string, s60, "@You did level up! You are level {reg4} now!^{reg5} EXP needed for new level!"),
-    
+     
 				(multiplayer_send_string_to_player, ":player_id", multiplayer_event_display_important_message, s60),
+
+       
 				(player_set_slot, ":player_id", slot_player_experience_to_next_level, reg5),
 				(player_set_slot, ":player_id", slot_player_level, reg4),
 				(player_set_slot, ":player_id", slot_player_experience, reg3),
@@ -8486,10 +8490,15 @@ scripts = [
   (else_try),
     (eq, ":event_type_custom", 3),
 
+
 (player_get_agent_id, ":player_agent", ":player_no"),
+(try_begin),
+     (gt, ":player_agent", -1),
+(agent_is_alive, ":player_agent"),
 (remove_agent, ":player_agent"),
-  
+  (try_end),
     (player_get_troop_id, ":player_troop_id", ":player_no"),
+   
 
 
 
@@ -8500,7 +8509,7 @@ scripts = [
 		(player_set_slot, ":player_no", slot_player_this_round_points, 0),
 		(player_set_slot, ":player_no", slot_player_this_round_kills, 0),
 		(player_set_slot, ":player_no", slot_player_this_round_deaths, 0),
-
+ (gt, ":player_troop_id", -1),
 
   (store_proficiency_level, reg10, ":player_troop_id", wpt_one_handed_weapon),
   (store_proficiency_level, reg11, ":player_troop_id", wpt_two_handed_weapon), 
@@ -8546,6 +8555,20 @@ scripts = [
 (try_end),
 
      (call_script, "script_illu_multiplayer_player_joined", ":player_no"),
+     (else_try),
+        (eq, ":event_type_custom", 4),
+        (player_is_active, ":player_no"),
+        (player_get_agent_id, ":player_agent", ":player_no"),
+          (agent_is_active, ":player_agent"),
+
+         (player_get_slot, reg5,  ":player_no", slot_player_warcry_cooldown),
+             (eq, reg5, 0),
+                 
+             (display_message, "@ gave warcry"),
+        (agent_set_damage_modifier, ":player_agent", 500),
+        (agent_play_sound, ":player_agent", snd_man_warcry),
+        (player_set_slot, ":player_no", slot_player_warcry_cooldown, warcry_cooldown),
+        (player_set_slot, ":player_no", slot_player_warcry_active_time, warcry_active_time),
     (try_end),
 
 
@@ -9340,13 +9363,17 @@ scripts = [
                      
             ### HELMET VISOR SCRIPT BEGIN #####
           
-      (try_begin),
+      (try_begin), 
       (eq, ":event_type_custom", 1),
       (assign, reg40, ":value_1"),
         (assign, reg41, ":value_2"),
-      (display_message, "@ agent id {reg40}, weapon {reg41}"),
       (agent_equip_item, ":value_1", ":value_2"), 
         (agent_play_sound, ":value_1", 99),
+        (else_try), #  heavy armor effect
+           (eq, ":event_type_custom", 2),
+              (assign, "$g_effect_heavy_armor", ":value_1"),
+              (assign, reg50, ":value_1"),
+              (display_message, "@ val {reg50}"),
       (try_end),
                     
             ### HELMET VISOR SCRIPT END ####
@@ -11566,7 +11593,8 @@ scripts = [
         (troop_set_slot, "trp_multiplayer_data", multi_data_maps_for_game_type_begin + 14, "scn_random_multi_plain_large"),
         (troop_set_slot, "trp_multiplayer_data", multi_data_maps_for_game_type_begin + 15, "scn_random_multi_steppe_medium"),
         (troop_set_slot, "trp_multiplayer_data", multi_data_maps_for_game_type_begin + 16, "scn_random_multi_steppe_large"),
-        (assign, ":num_maps", 17),
+        		(troop_set_slot, "trp_multiplayer_data", multi_data_maps_for_game_type_begin + 17, "scn_multi_scene_1"),
+        (assign, ":num_maps", 18),
       (else_try),
         (eq, ":game_type", multiplayer_game_type_capture_the_flag),
 		(troop_set_slot, "trp_multiplayer_data", multi_data_maps_for_game_type_begin, "scn_mp_old_castle"),

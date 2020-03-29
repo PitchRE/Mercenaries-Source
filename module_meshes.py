@@ -595,4 +595,23 @@ meshes = [
   ("mp_ui_host_maps_19", 0, "mp_ui_host_maps_d4", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("mp_ui_host_maps_20", 0, "mp_ui_host_maps_d5", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("mp_ui_host_maps_21", 0, "mp_ui_host_maps_d5", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+
+  ("skill_arrow_to_the_knee", 0, "skill_arrow_to_the_knee", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+
+  ("skill_warcry", 0, "skill_warcry", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+   ("skill_warcry_0", 0, "skill_warcry_0", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("skill_warcry_25", 0, "skill_warcry_25", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("skill_warcry_50", 0, "skill_warcry_50", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("skill_warcry_75", 0, "skill_warcry_75", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  
+  ("skill_whistle", 0, "skill_whistle", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("skill_whistle_0", 0, "skill_whistle_0", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("skill_whistle_25", 0, "skill_whistle_25", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("skill_whistle_50", 0, "skill_whistle_50", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("skill_whistle_75", 0, "skill_whistle_75", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+  ("effect_stronger", 0, "effect_stronger", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("effect_heavy_armor", 0, "effect_heavy_armor", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]
